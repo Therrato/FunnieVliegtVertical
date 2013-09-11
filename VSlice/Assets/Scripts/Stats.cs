@@ -6,7 +6,7 @@ using System.Text;
 namespace Assets.Scripts
 {
     //Roy First Init 11-9-2013 02:04
-    class Stats
+    public class Stats
     {
         #region privates
 

@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Assets.Scripts
 {
-    class PlayerStats :Stats
+    public class PlayerStats :Stats
     {
         private DateTime beginTime;
 

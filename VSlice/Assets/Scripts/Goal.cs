@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Assets.Scripts
 {
-    class Goal : Stats
+    public class Goal : Stats
     {
        
 

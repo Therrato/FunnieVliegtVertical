@@ -47,8 +47,11 @@
      <Compile Include="Assets\Scripts\Goal.cs" />
      <Compile Include="Assets\Scripts\InitScript.cs" />
      <Compile Include="Assets\Scripts\LevelSettings.cs" />
+     <Compile Include="Assets\Scripts\MoveScript.cs" />
      <Compile Include="Assets\Scripts\PlayerStats.cs" />
+     <Compile Include="Assets\Scripts\SpawnWorldScript.cs" />
      <Compile Include="Assets\Scripts\Stats.cs" />
+     <Compile Include="Assets\Scripts\TileScript.cs" />
      <None Include="Assets\Shaders\CurvedVertexes.shader" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
