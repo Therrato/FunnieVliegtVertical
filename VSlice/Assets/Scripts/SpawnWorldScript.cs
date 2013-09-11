@@ -22,8 +22,8 @@ public class SpawnWorldScript : MonoBehaviour {
 			newTile.transform.position = new Vector3(0,0,i*-100+50);
 			newTile.transform.parent = this.gameObject.transform;
 			spawnedTiles[i] = newTile;
-            newTile.GetComponent<TileScript>().fillInTileWithObstacles(availableResources);
             newTile.GetComponent<TileScript>().fillInTileWithBananas(availableResources);
+            newTile.GetComponent<TileScript>().fillInTileWithObstacles(availableResources);
 			tilesSpawned++;
 		}
 	
@@ -44,8 +44,8 @@ public class SpawnWorldScript : MonoBehaviour {
 			tilesSpawned++;
 			ClearSpace();
 			spawnedTiles[spawnedTiles.Length-1] = newTile;
-            newTile.GetComponent<TileScript>().fillInTileWithObstacles(availableResources);
             newTile.GetComponent<TileScript>().fillInTileWithBananas(availableResources);
+            newTile.GetComponent<TileScript>().fillInTileWithObstacles(availableResources);
 	}
 	
 	void ClearSpace(){

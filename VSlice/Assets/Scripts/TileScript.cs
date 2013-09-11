@@ -6,6 +6,7 @@ public class TileScript : MonoBehaviour {
     public int row = 3;
     public int depthRow = 10;
     public int height = 3; 
+    public bool[,,] spaceUsed = new bool[3,3,10]; // x , y ,z
 
 	// Use this for initialization
 	void Start () {
@@ -29,34 +30,67 @@ public class TileScript : MonoBehaviour {
 
     public void fillInTileWithObstacles(LevelSettings generate)
     {
-        if (generate.obstacles)
-        {
+        for (int i =0; i<10;i++){
 
-        }
+            if (generate.obstacles)
+            {
+                if (Random.Range(0, 5) == 4)
+                {
+                    int positionSpot = Random.Range(0, 3);
+                    if (!spaceUsed[positionSpot, 0, i] && !spaceUsed[positionSpot, 1, i] && !spaceUsed[positionSpot, 2, i])
+                    {
+                        GameObject instance = Instantiate(Resources.Load("Tree")) as GameObject;
+                        instance.transform.parent = this.transform;
+                        
+                        instance.transform.position = new Vector3(positionSpot * 20 - 20, 15.5f , i * 10.0f + this.transform.position.z - 50);
+
+                    }
+                }
+            }
+       }
        
     }
+
 
     public void fillInTileWithBananas(LevelSettings generate)
     {
         if (generate.bananas)
         {
-            int prevpos = Random.RandomRange(0,3);
+            int prevposx = Random.Range(0,3);
+            int prevposy = Random.Range(0,3);
             for (int i = 0; i < depthRow; i++)
             {
                 GameObject instance = Instantiate(Resources.Load("Banana")) as GameObject;
                 instance.transform.parent = this.transform;
-                int newpos = Random.RandomRange(0, 2) - 1 ;
-                if (newpos + prevpos > 0 && newpos + prevpos < 3)
+                int moveXBy = Random.Range(0, 3) - 1 ;
+                int moveYBy = Random.Range(0, 3) - 1;
+                Debug.Log("move x with " + moveXBy + " move y with " + moveYBy);
+                if (moveXBy + prevposx > 0 && moveXBy + prevposx < 3 && moveYBy + prevposy > 0 && moveYBy + prevposy < 3)
                 {
-                    
-                    instance.transform.position = new Vector3((newpos + prevpos) * 20 - 20, 0.0f, i * 10.0f + this.transform.position.z - 50);
-                   prevpos =  newpos+prevpos;
 
+                    instance.transform.position = new Vector3((moveXBy + prevposx) * 20 - 20, 10 * ((moveYBy + prevposy)) + 5.5f, i * 10.0f + this.transform.position.z - 50);
+                   prevposx =  moveXBy+prevposx;
+
+                }
+                else if (moveXBy + prevposx > 0 && moveXBy + prevposx < 3 )
+                {
+
+                    instance.transform.position = new Vector3((moveXBy + prevposx) * 20 - 20, prevposy * 10f + 5.5f, i * 10.0f + this.transform.position.z - 50);
+                    prevposx = moveXBy + prevposx;
+
+                }
+                else if (moveYBy + prevposy > 0 && moveYBy + prevposy < 3)
+                {
+                    instance.transform.position = new Vector3(prevposx * 20 - 20, 5 * ((moveYBy + prevposy)) + 5.5f  , i * 10.0f + this.transform.position.z - 50);
+                    prevposy = moveYBy + prevposy;
                 }
                 else
                 {
-                    instance.transform.position = new Vector3(prevpos * 20 - 20, 0.0f, i * 10.0f + this.transform.position.z -50);
+                    instance.transform.position = new Vector3(prevposx * 20 - 20, prevposy * 10f + 5.5f, i * 10.0f + this.transform.position.z - 50);
                 }
+                Debug.Log("was: "+spaceUsed[prevposx, prevposy, i]);
+                spaceUsed[prevposx, prevposy, i] = true;
+                Debug.Log("isNow: " + spaceUsed[prevposx, prevposy, i]);
             }
         }
     }
