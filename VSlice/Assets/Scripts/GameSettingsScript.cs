@@ -17,5 +17,9 @@ public class GameSettingsScript : MonoBehaviour
 		DontDestroyOnLoad(this);
 	}	
 	
+	public void instantiateNewLevelSettings()
+	{
+		availableResources = new LevelSettings(bananaToggle,obstacleToggle,monkeyToggle,figureToggle, new Goal());	
+	}
 
 }

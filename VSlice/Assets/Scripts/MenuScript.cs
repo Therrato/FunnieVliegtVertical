@@ -92,7 +92,7 @@ public class MenuScript : MonoBehaviour
 			
 			if(GUI.Button(saveSelectionButton, "Save selection"))
 			{
-				
+				gameSettings.instantiateNewLevelSettings();
 				Application.LoadLevel(1);
 				
 			}
