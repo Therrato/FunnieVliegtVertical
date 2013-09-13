@@ -6,7 +6,7 @@ public class MenuScript : MonoBehaviour
 {
 	
 	public LevelSettings availableResources;
-	public GameObject gameSettings;
+	public GameSettingsScript gameSettings;
 	
 	private Rect figureButton;
 	private Rect monkeyButton;	
@@ -31,6 +31,8 @@ public class MenuScript : MonoBehaviour
 	
 	void Start () 
 	{
+		gameSettings = GameObject.Find ("GameSettings").GetComponent<GameSettingsScript>();
+		
 		figureButton = new Rect(Screen.width / 2 + 300, Screen.height / 2 - 100, 200, 200);
 		monkeyButton = new Rect(Screen.width / 2 + 100, Screen.height / 2 - 100, 200, 200);
 		tutorialButton = new Rect(Screen.width / 2 - 100, Screen.height / 2 - 100, 200, 200);
