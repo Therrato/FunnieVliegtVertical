@@ -39,10 +39,10 @@ public class TileScript : MonoBehaviour {
                     int positionSpot = Random.Range(0, 3);
                     if (!spaceUsed[positionSpot, 0, i] && !spaceUsed[positionSpot, 1, i] && !spaceUsed[positionSpot, 2, i])
                     {
-                        GameObject instance = Instantiate(Resources.Load("20x30 Bamboo")) as GameObject;
+                        GameObject instance = Instantiate(Resources.Load("Bamboo")) as GameObject;
                         instance.transform.parent = this.transform;
                         
-                        instance.transform.position = new Vector3(positionSpot * 20 - 20, 15.5f , i * 10.0f + this.transform.position.z - 50);
+                        instance.transform.position = new Vector3(positionSpot * 20 - 20, 0f , i * 10.0f + this.transform.position.z - 50);
 
                     }
                 }

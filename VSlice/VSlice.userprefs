@@ -2,12 +2,13 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\FunnieMovementScript.cs">
     <Files>
-      <File FileName="Assets\Scripts\FunnieMovementScript.cs" Line="29" Column="59" />
+      <File FileName="Assets\Scripts\FunnieMovementScript.cs" Line="61" Column="76" />
       <File FileName="Assets\Scripts\MenuScript.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\GameSettingsScript.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\TileScript.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\TileScript.cs" Line="45" Column="92" />
       <File FileName="Assets\Script\Kinect\KinectWrapper\KinectSensor.cs" Line="1" Column="1" />
       <File FileName="Assets\Script\Kinect\KinectModelControllers\KinectModelControllerV2.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\SpawnWorldScript.cs" Line="17" Column="52" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
