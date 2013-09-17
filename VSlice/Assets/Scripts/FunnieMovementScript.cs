@@ -35,7 +35,7 @@ public class FunnieMovementScript : MonoBehaviour {
 			
 			angle = Mathf.Atan((handRight.transform.position.y - handLeft.transform.position.y)/
 								(handRight.transform.position.x-handLeft.transform.position.x))* Mathf.Rad2Deg;
-			Debug.Log ("angle of arms "+angle);
+			//Debug.Log ("angle of arms "+angle);
 			
 		}
 		else return;
@@ -76,7 +76,7 @@ public class FunnieMovementScript : MonoBehaviour {
 
     public void setFunnieSpeed()
     {
-        funniespeed = 45;
+        funniespeed = 35;
     }
 
     public void increaseSpeed()

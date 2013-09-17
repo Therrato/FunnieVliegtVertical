@@ -8,11 +8,14 @@ public class ObstacleScript : MonoBehaviour {
     public int laneswide;
     public int lanesHigh;
     public int lanesDeep;
+	
+	public FunnieMovementScript funnie;
 
 
 	// Use this for initialization
 	void Start () {
         ocupies = new ObstacleOccupation(laneswide, lanesHigh, lanesDeep);
+		funnie = GameObject.Find ("ParrotContainer").GetComponent<FunnieMovementScript>();
 	}
 	
 	// Update is called once per frame
@@ -20,9 +23,12 @@ public class ObstacleScript : MonoBehaviour {
 	
 	}
 
-    void OnTriggerEnter(Collider coll)
+    void OnTriggerEnter(Collider other)
     {
-        Debug.Log(coll.name);
-      //  if (coll.name)
+       	if(other.name == "BIRD")
+		{
+			funnie.setFunnieSpeed();
+			Destroy(this.gameObject);	
+		}else return;
     }
 }

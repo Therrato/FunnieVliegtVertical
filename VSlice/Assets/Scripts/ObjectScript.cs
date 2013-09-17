@@ -5,11 +5,15 @@ using System.Collections;
 public class ObjectScript : MonoBehaviour {
 	
 	
-	private InitScript statHandler;
+	public InitScript statHandler;
 	// Use this for initialization
-	void Start () 
+	
+	void Awake()
 	{
 		statHandler = GameObject.Find ("InitHolder").GetComponent<InitScript>();
+	}
+	void Start () 
+	{
 		
 	}
 	
@@ -21,8 +25,12 @@ public class ObjectScript : MonoBehaviour {
 	
 	void OnTriggerEnter(Collider other)
 	{
-		statHandler.playerStats.bananas += 1;
-		Debug.Log(statHandler.playerStats.bananas);
-		Destroy(this.gameObject);	
+		if(other.name == "BIRD")
+		{
+			Debug.Log (other.name + " lol");
+			statHandler.playerStats.bananas += 1;
+			Debug.Log(statHandler.playerStats.bananas);
+			Destroy(this.gameObject);	
+		}else return;
 	}
 }
