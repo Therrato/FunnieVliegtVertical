@@ -5,7 +5,7 @@ using Assets.Scripts;
 public class InitScript : MonoBehaviour {
 
     private Goal NormalGoal;
-    private PlayerStats playerStats;
+    public PlayerStats playerStats;
     public int runtime;
 	// Use this for initialization
 	void Start () {
