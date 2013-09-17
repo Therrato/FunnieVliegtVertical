@@ -7,7 +7,7 @@ public class TileScript : MonoBehaviour {
     public int depthRow = 10;
     public int height = 3; 
     public bool[,,] spaceUsed = new bool[3,3,10];
-    private FunnieMovementScript funnie;
+    public FunnieMovementScript funnie;
 
 	// Use this for initialization
 	void Start () {
