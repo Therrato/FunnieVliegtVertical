@@ -6,11 +6,12 @@ public class TileScript : MonoBehaviour {
     public int row = 3;
     public int depthRow = 10;
     public int height = 3; 
-    public bool[,,] spaceUsed = new bool[3,3,10]; // x , y ,z
+    public bool[,,] spaceUsed = new bool[3,3,10];
+    private FunnieMovementScript funnie;
 
 	// Use this for initialization
 	void Start () {
-	
+        funnie = GameObject.Find("ParrotContainer").GetComponent<FunnieMovementScript>();
 	}
 	
 	// Update is called once per frame
@@ -19,7 +20,7 @@ public class TileScript : MonoBehaviour {
 		if (this.transform.position.z >= 100){
 			this.gameObject.transform.parent.GetComponent<SpawnWorldScript>().spawnNewTile(this.gameObject);
 		}
-						this.gameObject.transform.position = new Vector3(this.gameObject.transform.position.x,this.gameObject.transform.position.y,this.gameObject.transform.position.z+50f*Time.deltaTime);
+						this.gameObject.transform.position = new Vector3(this.gameObject.transform.position.x,this.gameObject.transform.position.y,this.gameObject.transform.position.z+(funnie.getFunnieSpeed()*Time.deltaTime));
 	}
 
     void Awake() {

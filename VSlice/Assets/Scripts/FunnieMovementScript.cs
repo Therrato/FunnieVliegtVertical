@@ -9,7 +9,8 @@ public class FunnieMovementScript : MonoBehaviour {
 	public GameObject handLeft;
 	public GameObject handRight;
 	public GameObject shoulderCenter;
-	
+    private float funniespeed = 35;
+
 	float angle;
 	
 	float distance = 5f;
@@ -25,6 +26,7 @@ public class FunnieMovementScript : MonoBehaviour {
 	// Update is called once per frame
 	void Update () 
 	{
+        increaseSpeed();
 		updatePosition();
 		if((handRight.transform.position.y - handLeft.transform.position.y) != 0)
 		{	
@@ -66,4 +68,21 @@ public class FunnieMovementScript : MonoBehaviour {
 																			Mathf.Clamp(this.gameObject.transform.parent.transform.position.y, 2.0f, 25.0f), 
 																			40);		
 	}
+
+    public float getFunnieSpeed()
+    {
+        return funniespeed;
+    }
+
+    public void setFunnieSpeed()
+    {
+        funniespeed = 45;
+    }
+
+    public void increaseSpeed()
+    {
+
+        funniespeed += 0.5f *Time.deltaTime;
+
+    }
 }
