@@ -3,6 +3,7 @@
 public class ObstacleOccupation
 {
     private int[] occupates = new int[3];
+ 
 
 	public ObstacleOccupation(int xSpots, int hSpots, int zSpots)
 	{
