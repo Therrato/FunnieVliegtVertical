@@ -9,6 +9,7 @@ public class ItemSpawner : MonoBehaviour {
     public GameObject[] allPlaces;
     public GameObject[] pickupFruits;
     public GameObject[] pickupPowerUps;
+    public GameObject[] sideOnlyAllheight;
 
     public int row = 3;
     public int depthRow = 10;
@@ -79,8 +80,48 @@ public class ItemSpawner : MonoBehaviour {
                     Destroy(toPlaceObstacle);
                 }
             }
-            if (type == 2)
+            if (type == 2) // side only all height
             {
+                Debug.Log("Try To Spawn side only");
+                int laneHeight = Random.Range(0, 3);
+                GameObject toPlaceObstacle = Instantiate(sideOnlyAllheight[Random.Range(0,sideOnlyAllheight.Length)]) as GameObject;
+                int[] takesUp = toPlaceObstacle.GetComponent<ObstacleScript>().ocupies.getOccupation();
+                bool canPlace = true;
+                int lanePos;
+                if (Random.Range(0, 2) == 0)
+                {
+                    lanePos = 0;
+                    for (int w = 0; w < takesUp[0]; w++)
+                    {
+
+                        if (spaceUsed[w, laneHeight, i]) canPlace = false;
+                    }
+                }
+                else
+                {
+                    lanePos = 2;
+                    for (int w = -takesUp[0]; w >0; w++)
+                    {
+
+                        if (spaceUsed[w, laneHeight, i]) canPlace = false;
+                    }
+                }
+                if (canPlace)
+                {
+
+                    toPlaceObstacle.transform.parent = tileToFill.transform;
+                    toPlaceObstacle.transform.position = new Vector3((lanePos - 1) * 20, laneHeight*10, i * 10.0f + tileToFill.transform.position.z - 50);
+                    if (lanePos == 2) toPlaceObstacle.transform.Rotate(new Vector3(0, 180, 0));
+                    for (int j = 0; j < takesUp[1]; j++)
+                    {
+                        spaceUsed[lanePos, j, i] = true;
+                    }
+                }
+                else
+                {
+                    Debug.Log("failed To Spawn");
+                    Destroy(toPlaceObstacle);
+                }
 
             }
             if (type ==3) // spawn full width
