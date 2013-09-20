@@ -18,7 +18,6 @@ public class ObstacleScript : MonoBehaviour {
         ocupies = new ObstacleOccupation(laneswide, lanesHigh, lanesDeep);
     }
 	void Start () {
-        //ocupies = new ObstacleOccupation(laneswide, lanesHigh, lanesDeep);
 		funnie = GameObject.Find ("ParrotContainer").GetComponent<FunnieMovementScript>();
 	}
 	

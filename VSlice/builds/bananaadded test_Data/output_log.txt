@@ -11,7 +11,7 @@ Platform assembly: C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VS
 Loading C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\builds\bananaadded test_Data\Managed\UnityEngine.dll into Unity Child Domain
 Platform assembly: C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\builds\bananaadded test_Data\Managed\Assembly-CSharp.dll (this message is harmless)
 Loading C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\builds\bananaadded test_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-- Completed reload, in  0.139 seconds
+- Completed reload, in  0.071 seconds
 desktop: 1280x800 60Hz; virtual: 1280x800 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
@@ -41,52 +41,12 @@ Unloading 3 Unused Serialized files (Serialized files now loaded: 0 / Dirty seri
 System memory in use after: 2.1 MB.
 
 Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 429.
-Total: 1.113671 ms (FindLiveObjects: 0.025022 ms CreateObjectMapping: 0.015013 ms MarkObjects: 0.254454 ms  DeleteObjects: 0.009623 ms)
-
-Try To Spawn
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-ItemSpawner:createObstacles(GameObject, Int32) (at C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Scripts\ItemSpawner.cs:58)
-ItemSpawner:fillThisTile(GameObject, LevelSettings) (at C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Scripts\ItemSpawner.cs:46)
-TileScript:fillInTileWithObstacles(LevelSettings) (at C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Scripts\TileScript.cs:52)
-SpawnWorldScript:Start() (at C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Scripts\SpawnWorldScript.cs:28)
- 
-(Filename: C Line: 0)
-
-Try To Spawn
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-ItemSpawner:createObstacles(GameObject, Int32) (at C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Scripts\ItemSpawner.cs:58)
-ItemSpawner:fillThisTile(GameObject, LevelSettings) (at C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Scripts\ItemSpawner.cs:46)
-TileScript:fillInTileWithObstacles(LevelSettings) (at C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Scripts\TileScript.cs:52)
-SpawnWorldScript:Start() (at C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Scripts\SpawnWorldScript.cs:28)
- 
-(Filename: C Line: 0)
+Total: 1.056313 ms (FindLiveObjects: 0.025022 ms CreateObjectMapping: 0.015398 ms MarkObjects: 0.258304 ms  DeleteObjects: 0.010393 ms)
 
 Try To Spawn full width
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 ItemSpawner:createObstacles(GameObject, Int32) (at C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Scripts\ItemSpawner.cs:128)
-ItemSpawner:fillThisTile(GameObject, LevelSettings) (at C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Scripts\ItemSpawner.cs:46)
-TileScript:fillInTileWithObstacles(LevelSettings) (at C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Scripts\TileScript.cs:52)
-SpawnWorldScript:Start() (at C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Scripts\SpawnWorldScript.cs:28)
- 
-(Filename: C Line: 0)
-
-Try To Spawn full width
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-ItemSpawner:createObstacles(GameObject, Int32) (at C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Scripts\ItemSpawner.cs:128)
-ItemSpawner:fillThisTile(GameObject, LevelSettings) (at C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Scripts\ItemSpawner.cs:46)
-TileScript:fillInTileWithObstacles(LevelSettings) (at C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Scripts\TileScript.cs:52)
-SpawnWorldScript:Start() (at C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Scripts\SpawnWorldScript.cs:28)
- 
-(Filename: C Line: 0)
-
-Try To Spawn side only
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-ItemSpawner:createObstacles(GameObject, Int32) (at C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Scripts\ItemSpawner.cs:85)
 ItemSpawner:fillThisTile(GameObject, LevelSettings) (at C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Scripts\ItemSpawner.cs:46)
 TileScript:fillInTileWithObstacles(LevelSettings) (at C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Scripts\TileScript.cs:52)
 SpawnWorldScript:Start() (at C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Scripts\SpawnWorldScript.cs:28)
@@ -110,22 +70,893 @@ FunnieMovementScript:Start() (at C:\Users\RoySchroder\Documents\GitHub\FunnieVli
  
 (Filename: C Line: 0)
 
-Simulating Assets/Recordings/playback0
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-KinectEmulator:LoadPlaybackFile(String) (at C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:83)
-KinectEmulator:Start() (at C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:51)
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
  
 (Filename: C Line: 0)
 
-Try To Spawn
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-ItemSpawner:createObstacles(GameObject, Int32) (at C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Scripts\ItemSpawner.cs:58)
-ItemSpawner:fillThisTile(GameObject, LevelSettings) (at C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Scripts\ItemSpawner.cs:46)
-TileScript:fillInTileWithObstacles(LevelSettings) (at C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Scripts\TileScript.cs:52)
-SpawnWorldScript:spawnNewTile(GameObject) (at C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Scripts\SpawnWorldScript.cs:51)
-TileScript:Update() (at C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Scripts\TileScript.cs:21)
+IsolatedStorageException: Could not find a part of the path "C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\builds\Assets\Recordings\playback0".
+  at System.IO.FileStream..ctor (System.String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, Boolean anonymous, FileOptions options) [0x001f9] in /Applications/buildAgent/work/84669f285f6a667f/mcs/class/corlib/System.IO/FileStream.cs:290 
+  at System.IO.FileStream..ctor (System.String path, FileMode mode) [0x00000] in <filename unknown>:0 
+  at KinectEmulator.LoadPlaybackFile (System.String filePath) [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:74 
+  at KinectEmulator.Start () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:51 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
  
 (Filename: C Line: 0)
 
@@ -140,6 +971,566 @@ TileScript:Update() (at C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertic
  
 (Filename: C Line: 0)
 
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
 Try To Spawn side only
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
@@ -151,14 +1542,234 @@ TileScript:Update() (at C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertic
  
 (Filename: C Line: 0)
 
-Try To Spawn full width
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-ItemSpawner:createObstacles(GameObject, Int32) (at C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Scripts\ItemSpawner.cs:128)
-ItemSpawner:fillThisTile(GameObject, LevelSettings) (at C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Scripts\ItemSpawner.cs:46)
-TileScript:fillInTileWithObstacles(LevelSettings) (at C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Scripts\TileScript.cs:52)
-SpawnWorldScript:spawnNewTile(GameObject) (at C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Scripts\SpawnWorldScript.cs:51)
-TileScript:Update() (at C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Scripts\TileScript.cs:21)
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at KinectEmulator.Kinect.KinectInterface.getSkeleton () [0x00000] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:107 
+  at SkeletonWrapper.pollSkeleton () [0x00029] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs:92 
+  at KinectPointController.Update () [0x0000d] in C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectModelControllers\KinectPointController.cs:102 
  
 (Filename: C Line: 0)
 
