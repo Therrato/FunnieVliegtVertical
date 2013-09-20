@@ -72,6 +72,7 @@
      <Compile Include="Assets\Scripts\Stats.cs" />
      <Compile Include="Assets\Scripts\TileScript.cs" />
      <None Include="Assets\Asset\Shaders\Normal-Diffuse.shader" />
+     <None Include="Assets\Standard Assets\Skyboxes\_skybox info.txt" />
      <None Include="Assets\Shaders\CurvedVertexes.shader" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

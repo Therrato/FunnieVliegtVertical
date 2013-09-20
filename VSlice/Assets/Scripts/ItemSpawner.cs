@@ -51,7 +51,7 @@ public class ItemSpawner : MonoBehaviour {
 
     public void createObstacles(GameObject tileToFill,int i)
     {
-        if (Random.Range(0, 4) == 1)
+        if (Random.Range(0, 7) == 1)
         {
             int type = Random.Range(0, 4); 
             if (type == 1){// spawn botlane only
@@ -112,10 +112,9 @@ public class ItemSpawner : MonoBehaviour {
                     toPlaceObstacle.transform.parent = tileToFill.transform;
                     toPlaceObstacle.transform.position = new Vector3((lanePos - 1) * 20, laneHeight*10, i * 10.0f + tileToFill.transform.position.z - 50);
                     if (lanePos == 2) toPlaceObstacle.transform.Rotate(new Vector3(0, 180, 0));
-                    for (int j = 0; j < takesUp[1]; j++)
-                    {
-                        spaceUsed[lanePos, j, i] = true;
-                    }
+                    spaceUsed[lanePos, laneHeight, i] = true;
+                    spaceUsed[1, lanePos, i]=true;
+
                 }
                 else
                 {

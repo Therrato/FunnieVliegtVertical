@@ -11,7 +11,154 @@ Platform assembly: C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VS
 Loading C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\builds\bananaadded test_Data\Managed\UnityEngine.dll into Unity Child Domain
 Platform assembly: C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\builds\bananaadded test_Data\Managed\Assembly-CSharp.dll (this message is harmless)
 Loading C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\builds\bananaadded test_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-- Completed reload, in  0.052 seconds
+- Completed reload, in  0.139 seconds
 desktop: 1280x800 60Hz; virtual: 1280x800 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
+Initiated
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+MenuScript:Start() (at C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Scripts\MenuScript.cs:42)
+ 
+(Filename: C Line: 0)
+
+The Choice Mode button is pressed!
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+MenuScript:OnGUI() (at C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Scripts\MenuScript.cs:61)
+ 
+(Filename: C Line: 0)
+
+NuiInitialize Failed.
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+KinectSensor:Awake() (at C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectSensor.cs:147)
+ 
+(Filename: C Line: 0)
+
+System memory in use before: 2.2 MB.
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+System memory in use after: 2.1 MB.
+
+Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 429.
+Total: 1.113671 ms (FindLiveObjects: 0.025022 ms CreateObjectMapping: 0.015013 ms MarkObjects: 0.254454 ms  DeleteObjects: 0.009623 ms)
+
+Try To Spawn
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+ItemSpawner:createObstacles(GameObject, Int32) (at C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Scripts\ItemSpawner.cs:58)
+ItemSpawner:fillThisTile(GameObject, LevelSettings) (at C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Scripts\ItemSpawner.cs:46)
+TileScript:fillInTileWithObstacles(LevelSettings) (at C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Scripts\TileScript.cs:52)
+SpawnWorldScript:Start() (at C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Scripts\SpawnWorldScript.cs:28)
+ 
+(Filename: C Line: 0)
+
+Try To Spawn
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+ItemSpawner:createObstacles(GameObject, Int32) (at C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Scripts\ItemSpawner.cs:58)
+ItemSpawner:fillThisTile(GameObject, LevelSettings) (at C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Scripts\ItemSpawner.cs:46)
+TileScript:fillInTileWithObstacles(LevelSettings) (at C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Scripts\TileScript.cs:52)
+SpawnWorldScript:Start() (at C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Scripts\SpawnWorldScript.cs:28)
+ 
+(Filename: C Line: 0)
+
+Try To Spawn full width
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+ItemSpawner:createObstacles(GameObject, Int32) (at C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Scripts\ItemSpawner.cs:128)
+ItemSpawner:fillThisTile(GameObject, LevelSettings) (at C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Scripts\ItemSpawner.cs:46)
+TileScript:fillInTileWithObstacles(LevelSettings) (at C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Scripts\TileScript.cs:52)
+SpawnWorldScript:Start() (at C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Scripts\SpawnWorldScript.cs:28)
+ 
+(Filename: C Line: 0)
+
+Try To Spawn full width
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+ItemSpawner:createObstacles(GameObject, Int32) (at C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Scripts\ItemSpawner.cs:128)
+ItemSpawner:fillThisTile(GameObject, LevelSettings) (at C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Scripts\ItemSpawner.cs:46)
+TileScript:fillInTileWithObstacles(LevelSettings) (at C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Scripts\TileScript.cs:52)
+SpawnWorldScript:Start() (at C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Scripts\SpawnWorldScript.cs:28)
+ 
+(Filename: C Line: 0)
+
+Try To Spawn side only
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+ItemSpawner:createObstacles(GameObject, Int32) (at C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Scripts\ItemSpawner.cs:85)
+ItemSpawner:fillThisTile(GameObject, LevelSettings) (at C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Scripts\ItemSpawner.cs:46)
+TileScript:fillInTileWithObstacles(LevelSettings) (at C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Scripts\TileScript.cs:52)
+SpawnWorldScript:Start() (at C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Scripts\SpawnWorldScript.cs:28)
+ 
+(Filename: C Line: 0)
+
+Try To Spawn side only
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+ItemSpawner:createObstacles(GameObject, Int32) (at C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Scripts\ItemSpawner.cs:85)
+ItemSpawner:fillThisTile(GameObject, LevelSettings) (at C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Scripts\ItemSpawner.cs:46)
+TileScript:fillInTileWithObstacles(LevelSettings) (at C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Scripts\TileScript.cs:52)
+SpawnWorldScript:Start() (at C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Scripts\SpawnWorldScript.cs:28)
+ 
+(Filename: C Line: 0)
+
+0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+FunnieMovementScript:Start() (at C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Scripts\FunnieMovementScript.cs:22)
+ 
+(Filename: C Line: 0)
+
+Simulating Assets/Recordings/playback0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+KinectEmulator:LoadPlaybackFile(String) (at C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:83)
+KinectEmulator:Start() (at C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Script\Kinect\KinectWrapper\KinectEmulator.cs:51)
+ 
+(Filename: C Line: 0)
+
+Try To Spawn
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+ItemSpawner:createObstacles(GameObject, Int32) (at C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Scripts\ItemSpawner.cs:58)
+ItemSpawner:fillThisTile(GameObject, LevelSettings) (at C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Scripts\ItemSpawner.cs:46)
+TileScript:fillInTileWithObstacles(LevelSettings) (at C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Scripts\TileScript.cs:52)
+SpawnWorldScript:spawnNewTile(GameObject) (at C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Scripts\SpawnWorldScript.cs:51)
+TileScript:Update() (at C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Scripts\TileScript.cs:21)
+ 
+(Filename: C Line: 0)
+
+Try To Spawn side only
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+ItemSpawner:createObstacles(GameObject, Int32) (at C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Scripts\ItemSpawner.cs:85)
+ItemSpawner:fillThisTile(GameObject, LevelSettings) (at C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Scripts\ItemSpawner.cs:46)
+TileScript:fillInTileWithObstacles(LevelSettings) (at C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Scripts\TileScript.cs:52)
+SpawnWorldScript:spawnNewTile(GameObject) (at C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Scripts\SpawnWorldScript.cs:51)
+TileScript:Update() (at C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Scripts\TileScript.cs:21)
+ 
+(Filename: C Line: 0)
+
+Try To Spawn side only
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+ItemSpawner:createObstacles(GameObject, Int32) (at C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Scripts\ItemSpawner.cs:85)
+ItemSpawner:fillThisTile(GameObject, LevelSettings) (at C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Scripts\ItemSpawner.cs:46)
+TileScript:fillInTileWithObstacles(LevelSettings) (at C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Scripts\TileScript.cs:52)
+SpawnWorldScript:spawnNewTile(GameObject) (at C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Scripts\SpawnWorldScript.cs:51)
+TileScript:Update() (at C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Scripts\TileScript.cs:21)
+ 
+(Filename: C Line: 0)
+
+Try To Spawn full width
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+ItemSpawner:createObstacles(GameObject, Int32) (at C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Scripts\ItemSpawner.cs:128)
+ItemSpawner:fillThisTile(GameObject, LevelSettings) (at C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Scripts\ItemSpawner.cs:46)
+TileScript:fillInTileWithObstacles(LevelSettings) (at C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Scripts\TileScript.cs:52)
+SpawnWorldScript:spawnNewTile(GameObject) (at C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Scripts\SpawnWorldScript.cs:51)
+TileScript:Update() (at C:\Users\RoySchroder\Documents\GitHub\FunnieVliegtVertical\VSlice\Assets\Scripts\TileScript.cs:21)
+ 
+(Filename: C Line: 0)
+
