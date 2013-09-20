@@ -56,7 +56,7 @@ public class ItemSpawner : MonoBehaviour {
             if (type == 1){// spawn botlane only
                 Debug.Log("Try To Spawn");
                 int lanePos = Random.Range(0,3);
-                GameObject toPlaceObstacle = Instantiate(bottomLaneOnly[Random.Range(0, bottomLaneOnly.Length)]) as GameObject; ;
+                GameObject toPlaceObstacle = Instantiate(bottomLaneOnly[Random.Range(0, bottomLaneOnly.Length)]) as GameObject;
                 int[] takesUp = toPlaceObstacle.GetComponent<ObstacleScript>().ocupies.getOccupation();
                 bool canPlace = true;
                 for (int j = 0; j < 3; j++)
@@ -65,10 +65,10 @@ public class ItemSpawner : MonoBehaviour {
                 }
                 if (canPlace)
                 {
-                    //  toPlaceObstacle = Instantiate(toPlaceObstacle) as GameObject;
+                    
                     toPlaceObstacle.transform.parent = tileToFill.transform;
                     toPlaceObstacle.transform.position = new Vector3((lanePos - 1) * 20 - 10, 0f, i * 10.0f + tileToFill.transform.position.z - 50);
-                    for (int j = 0; j < 3; j++)
+                    for (int j = 0; j < takesUp[1]; j++)
                     {
                         spaceUsed[lanePos, j, i] = true;
                     }
@@ -79,13 +79,36 @@ public class ItemSpawner : MonoBehaviour {
                     Destroy(toPlaceObstacle);
                 }
             }
-            if (type == 1)
-            {
-
-            }
             if (type == 2)
             {
 
+            }
+            if (type ==3) // spawn full width
+            {
+                Debug.Log("Try To Spawn full width");
+                GameObject toPlaceObstacle = Instantiate(fullWidthBotLane[Random.Range(0, fullWidthBotLane.Length)]) as GameObject;
+                int[] takesUp = toPlaceObstacle.GetComponent<ObstacleScript>().ocupies.getOccupation();
+                bool canPlace = true;
+                for (int j = 0; j < takesUp[0]; j++)
+                {
+                    for (int h = 0; h < takesUp[1]; h++)
+                    if (spaceUsed[j, h, i]) canPlace = false;
+                }
+                if (canPlace)
+                {
+
+                    toPlaceObstacle.transform.parent = tileToFill.transform;
+                    toPlaceObstacle.transform.position = new Vector3((1 - 1) * 20 - 10, 0f, i * 10.0f + tileToFill.transform.position.z - 50);
+                    for (int j = 0; j < 3; j++)
+                    {
+                       spaceUsed[j, 0, i] = true;
+                    }
+                }
+                else
+                {
+                    Debug.Log("failed To Spawn");
+                    Destroy(toPlaceObstacle);
+                }
             }
         
         }
