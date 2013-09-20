@@ -8,13 +8,15 @@ namespace Assets.Scripts
     //Roy First Init 11-9-2013 02:04
     public class Stats
     {
+       
         #region privates
 
         private int _bananas;
         private int _obstaclesPassed;
         private int _obstaclesHit;
         private int _feathersCollected;
-
+        private int _figuresPassed;
+        public int duration;
   
         
 
@@ -22,9 +24,12 @@ namespace Assets.Scripts
 
         #region Publics
 
-        public int duration;
         
-
+         public int figuresPassed
+        {
+            get { return _figuresPassed; }
+            set { _figuresPassed = value; }
+        }
         public int feathersCollected
         {
             get { return _feathersCollected; }
@@ -48,10 +53,26 @@ namespace Assets.Scripts
 
         #endregion
 
+      /// <summary>
+      /// this well set the stats incase its needed for the goal
+      /// </summary>
+      /// <param name="bananasToCollect">amount of bananas needed to end level</param>
+        /// <param name="oblstaclesToPass">amount of obstacles passed to end level</param>
+        /// <param name="feathersToCollect">amount of Feathers needed to end level</param>
+        /// <param name="figuresToPass">amount of Figures needed to end level</param>
+        /// <param name="secondsToPlay">amount of set duration of the run</param>
+        public Stats(int bananasToCollect,int oblstaclesToPass, int feathersToCollect, int figuresToPass,int secondsToPlay)
+        {
+            bananas = bananasToCollect;
+            _obstaclesPassed = oblstaclesToPass;
+            _feathersCollected = feathersToCollect;
+            _figuresPassed = figuresToPass;
+            duration = secondsToPlay;
+        }
 
         public Stats()
         {
-            
+
         }
 
  

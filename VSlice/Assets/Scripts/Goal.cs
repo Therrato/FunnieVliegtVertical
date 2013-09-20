@@ -22,6 +22,7 @@ namespace Assets.Scripts
 
         }
 
+
         public bool isGoalReached(PlayerStats playerStats)
         {
             if (this.duration != 0)
