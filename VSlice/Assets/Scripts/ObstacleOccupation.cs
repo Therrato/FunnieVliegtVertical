@@ -13,7 +13,10 @@ public class ObstacleOccupation
 
 
 	}
-
+    /// <summary>
+    /// returns the space needed for the object; can be accesed by calling getOccupation()[value] 0 = width 1 = height 2 == depth
+    /// </summary>
+    /// <returns></returns>
     public int[] getOccupation()
     {
         return occupates;

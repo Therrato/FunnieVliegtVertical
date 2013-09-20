@@ -55,10 +55,12 @@
      <Compile Include="Assets\Script\Kinect\KinectWrapper\KinectRecorder.cs" />
      <Compile Include="Assets\Script\Kinect\KinectWrapper\KinectSensor.cs" />
      <Compile Include="Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs" />
+     <Compile Include="Assets\Scripts\FlyLane.cs" />
      <Compile Include="Assets\Scripts\FunnieMovementScript.cs" />
      <Compile Include="Assets\Scripts\GameSettingsScript.cs" />
      <Compile Include="Assets\Scripts\Goal.cs" />
      <Compile Include="Assets\Scripts\InitScript.cs" />
+     <Compile Include="Assets\Scripts\ItemSpawner.cs" />
      <Compile Include="Assets\Scripts\LevelSettings.cs" />
      <Compile Include="Assets\Scripts\MenuScript.cs" />
      <Compile Include="Assets\Scripts\MoveScript.cs" />

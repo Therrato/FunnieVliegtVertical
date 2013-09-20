@@ -27,9 +27,9 @@ public class ObjectScript : MonoBehaviour {
 	{
 		if(other.name == "BIRD")
 		{
-			Debug.Log (other.name + " lol");
+			//Debug.Log (other.name + " lol");
 			statHandler.playerStats.bananas += 1;
-			Debug.Log(statHandler.playerStats.bananas);
+			//Debug.Log(statHandler.playerStats.bananas);
 			Destroy(this.gameObject);	
 		}else return;
 	}
