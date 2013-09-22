@@ -16,6 +16,14 @@ namespace Assets.Scripts
         private int _obstaclesHit;
         private int _feathersCollected;
         private int _figuresPassed;
+        private int _tilesPassed;
+
+        public int tilesPassed
+        {
+            get { return _tilesPassed; }
+            set { _tilesPassed = value; }
+        }
+        
         public int duration;
   
         

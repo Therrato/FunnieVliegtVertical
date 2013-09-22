@@ -21,10 +21,15 @@ namespace Assets.Scripts
             this.duration = playerGoals.duration;
             this.figuresPassed = playerGoals.figuresPassed;
             this.obstaclesHit = playerGoals.obstaclesHit;
+            this.tilesPassed = playerGoals.tilesPassed;
 
         }
 
-
+        /// <summary>
+        /// will check if all requerements for ending thelevel are met
+        /// </summary>
+        /// <param name="playerStats">give the current stats of the player</param>
+        /// <returns>when true requeirements are met</returns>
         public bool isGoalReached(PlayerStats playerStats)
         {
             if (this.duration != 0)
@@ -36,6 +41,7 @@ namespace Assets.Scripts
             if (this.figuresPassed > playerStats.figuresPassed) return false;
             if (this.obstaclesHit > playerStats.obstaclesHit) return false;
             if (this.obstaclesPassed > playerStats.obstaclesPassed) return false;
+            if (this.tilesPassed > playerStats.tilesPassed) return false;
 
             return true;
         }
