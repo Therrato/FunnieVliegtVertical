@@ -19,6 +19,8 @@ namespace Assets.Scripts
             this.obstaclesPassed = playerGoals.obstaclesPassed;
             this.feathersCollected = playerGoals.feathersCollected;
             this.duration = playerGoals.duration;
+            this.figuresPassed = playerGoals.figuresPassed;
+            this.obstaclesHit = playerGoals.obstaclesHit;
 
         }
 
@@ -27,10 +29,15 @@ namespace Assets.Scripts
         {
             if (this.duration != 0)
             {
-                if (this.duration < playerStats.calculateRunTime()) return true;
+                if (this.duration > playerStats.calculateRunTime()) return false;
             }
+            if (this.bananas > playerStats.bananas) return false;
+            if (this.feathersCollected > playerStats.feathersCollected) return false;
+            if (this.figuresPassed > playerStats.figuresPassed) return false;
+            if (this.obstaclesHit > playerStats.obstaclesHit) return false;
+            if (this.obstaclesPassed > playerStats.obstaclesPassed) return false;
 
-            return false;
+            return true;
         }
 
         

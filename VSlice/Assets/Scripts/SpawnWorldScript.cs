@@ -7,6 +7,11 @@ public class SpawnWorldScript : MonoBehaviour {
 	public int tilesSpawned=0;
 	public GameObject[] spawnedTiles;
 
+    public bool goalReached;
+    public bool endTileSpawned;
+    public bool endTileReached;
+    public GameObject endTile;
+
     public LevelSettings availableResources;
 
 	// Use this for initialization
@@ -40,13 +45,31 @@ public class SpawnWorldScript : MonoBehaviour {
 	
 	public void spawnNewTile(GameObject oldTile){
 			Destroy(oldTile);
-	        GameObject newTile =  (GameObject)Instantiate(tiles[Random.Range(0,tiles.Length)]);
-			newTile.transform.position = new Vector3(0,0,spawnedTiles[spawnedTiles.Length-1].transform.position.z-100);
-			newTile.transform.parent = this.gameObject.transform;
-			tilesSpawned++;
-			ClearSpace();
-			spawnedTiles[spawnedTiles.Length-1] = newTile;
-            newTile.GetComponent<TileScript>().fillInTileWithObstacles(availableResources);
+            if (!goalReached)
+            {
+                GameObject newTile = (GameObject)Instantiate(tiles[Random.Range(0, tiles.Length)]);
+                newTile.transform.position = new Vector3(0, 0, spawnedTiles[spawnedTiles.Length - 1].transform.position.z - 100);
+                newTile.transform.parent = this.gameObject.transform;
+                tilesSpawned++;
+                ClearSpace();
+                spawnedTiles[spawnedTiles.Length - 1] = newTile;
+                newTile.GetComponent<TileScript>().fillInTileWithObstacles(availableResources);
+            }
+            else
+            {
+                if (!endTileSpawned)
+                {
+                    GameObject theEndTile = (GameObject)Instantiate(endTile);
+                    theEndTile.transform.position = new Vector3(0, 0, spawnedTiles[spawnedTiles.Length - 1].transform.position.z - 100);
+                    theEndTile.transform.parent = this.gameObject.transform;
+                    tilesSpawned++;
+                    ClearSpace();
+                    spawnedTiles[spawnedTiles.Length - 1] = theEndTile;
+                    endTileSpawned = true;
+                }
+                else ClearSpace();
+            }
+           
 	}
 	
 	void ClearSpace(){
@@ -56,5 +79,10 @@ public class SpawnWorldScript : MonoBehaviour {
 		}
 		spawnedTiles[spawnedTiles.Length-1] = null;
 	}
+
+    public void setGoalReached(bool setTo)
+    {
+        goalReached = setTo;
+    }
 		
 }

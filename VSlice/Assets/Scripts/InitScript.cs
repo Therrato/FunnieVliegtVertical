@@ -7,16 +7,17 @@ public class InitScript : MonoBehaviour {
     private Goal NormalGoal;
     public PlayerStats playerStats;
     public int runtime;
+    public SpawnWorldScript worldSpawner;
 	// Use this for initialization
 	void Start () {
 		GatherBuildSettings();
+        worldSpawner = GameObject.Find("World").GetComponent<SpawnWorldScript>();
        
 	}
 	
 	// Update is called once per frame
 	void Update () {
-        runtime = playerStats.calculateRunTime();
-        if (NormalGoal.isGoalReached(playerStats)) Debug.Log("45 sec expired");
+        if (!worldSpawner.goalReached)worldSpawner.setGoalReached(NormalGoal.isGoalReached(playerStats));
 	}
 	
 	void GatherBuildSettings(){
