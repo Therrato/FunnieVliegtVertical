@@ -40,6 +40,7 @@ Shader "Custom/CurvedVertexesNew"
 			{
 				v2f p;
 				p.pos = mul (UNITY_MATRIX_MVP, v.vertex);
+				//p.normal = mul(UNITY_MATRIX_MVP, v.normal);
 				p.normal = v.normal;
 				p.uv = v.texcoord;
 				p.viewDir = ObjSpaceViewDir( v.vertex );
