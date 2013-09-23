@@ -153,9 +153,14 @@ public class ItemSpawner : MonoBehaviour {
         
         }
         
+        
 
     }
-
+    /// <summary>
+    /// fills tile with bananas
+    /// </summary>
+    /// <param name="tileToFill">tile to fill</param>
+    /// <param name="i">row position</param>
     public void createPickUps(GameObject tileToFill, int i)
     {
         if (bananasLeftToSpawn == 0)
@@ -173,10 +178,19 @@ public class ItemSpawner : MonoBehaviour {
             bananasLeftToSpawn--;
             if (!spaceUsed[lastSpawnedBanana.x + 1, lastSpawnedBanana.y + 1, i]) // if there is place
             {
-                GameObject newPicKup = Instantiate(pickupFruits[0]) as GameObject;
+                GameObject newPicKup;
+                if (Random.Range(0, 10) == 1)
+                {
+                   newPicKup = Instantiate(pickupFruits[1]) as GameObject;
+
+                }
+                else { 
+                    newPicKup = Instantiate(pickupFruits[0]) as GameObject; 
+                }
                 newPicKup.transform.parent = tileToFill.transform;
                 newPicKup.transform.position = new Vector3(lastSpawnedBanana.x * 20f, lastSpawnedBanana.y * 10f + 15f, i * 10f + tileToFill.transform.position.z);
                 spaceUsed[lastSpawnedBanana.x + 1, lastSpawnedBanana.y + 1, i] = true;
+                
             }
             else  // calculate new startpoint for line
             {
