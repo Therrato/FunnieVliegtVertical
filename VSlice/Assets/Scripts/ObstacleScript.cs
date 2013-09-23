@@ -10,12 +10,14 @@ public class ObstacleScript : MonoBehaviour {
     public int lanesDeep;
 	
 	public FunnieMovementScript funnie;
+    public InitScript statHandler;
 
 
 	// Use this for initialization
     void Awake()
     {
         ocupies = new ObstacleOccupation(laneswide, lanesHigh, lanesDeep);
+        statHandler = GameObject.Find("InitHolder").GetComponent<InitScript>();
     }
 	void Start () {
 		funnie = GameObject.Find ("ParrotContainer").GetComponent<FunnieMovementScript>();
@@ -31,6 +33,8 @@ public class ObstacleScript : MonoBehaviour {
        	if(other.name == "BIRD")
 		{
 			funnie.setFunnieSpeed();
+            statHandler.playerStats.obstaclesHit += 1;
+			
 			Destroy(this.gameObject);	
 		}else return;
     }

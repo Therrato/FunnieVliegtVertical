@@ -20,7 +20,7 @@ public class ObjectScript : MonoBehaviour {
 	// Update is called once per frame
 	void Update () 
 	{
-	
+        this.gameObject.transform.eulerAngles = new Vector3(this.gameObject.transform.eulerAngles.x, this.gameObject.transform.eulerAngles.y+3, this.gameObject.transform.eulerAngles.z);
 	}
 	
 	void OnTriggerEnter(Collider other)

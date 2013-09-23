@@ -14,12 +14,15 @@ public class SpawnWorldScript : MonoBehaviour {
 
     public LevelSettings availableResources;
 
+    public InitScript statHandler;
+
 	// Use this for initialization
     public void Awake()
     {
        // LevelSettings buildableResources = GameObject.Find("GameSettings").GetComponent<GameSettingsScript>().availableResources;
       //  availableResources = new LevelSettings(buildableResources.bananas,buildableResources.obstacles,buildableResources.monkeys,buildableResources.figures,new Goal());
 		availableResources = new LevelSettings(true,true,true,true, new Goal());
+        statHandler = GameObject.Find("InitHolder").GetComponent<InitScript>();
     }
 
 	void Start () {
@@ -54,6 +57,8 @@ public class SpawnWorldScript : MonoBehaviour {
                 ClearSpace();
                 spawnedTiles[spawnedTiles.Length - 1] = newTile;
                 newTile.GetComponent<TileScript>().fillInTileWithObstacles(availableResources);
+
+                statHandler.playerStats.tilesPassed = tilesSpawned - 4;
             }
             else
             {

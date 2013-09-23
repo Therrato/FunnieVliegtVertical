@@ -51,12 +51,12 @@ public class MenuScript : MonoBehaviour
 				Debug.Log ("The Tutorial Mode button is pressed!");	
 			}
 			
-			if(GUI.Button(fiveMinButton, "5 Minute Mode "))
+			if(GUI.Button(fiveMinButton, "5 Minute Mode"))
 			{
 				Debug.Log ("The 5 Minute Mode button is pressed!");	
 			}
 			
-			if(GUI.Button(choiceButton, "Choice Mode "))
+			if(GUI.Button(choiceButton, "Goal Mode"))
 			{
 				Debug.Log ("The Choice Mode button is pressed!");
 				modeSelect = false;
@@ -78,11 +78,11 @@ public class MenuScript : MonoBehaviour
 				Debug.Log ("Obstacle toggle = " + gameSettings.obstacleToggle);
 			}
 			 
-			if(GUI.Button(monkeyButton, "Monkeys?"))
-			{
-				gameSettings.monkeyToggle = !gameSettings.obstacleToggle;
-				Debug.Log ("Monkey toggle = " + gameSettings.monkeyToggle);
-			}
+			//if(GUI.Button(monkeyButton, "Monkeys?"))
+			//{
+			//	gameSettings.monkeyToggle = !gameSettings.obstacleToggle;
+			//	Debug.Log ("Monkey toggle = " + gameSettings.monkeyToggle);
+			//}
 			
 			if(GUI.Button(figureButton, "Figures?"))
 			{

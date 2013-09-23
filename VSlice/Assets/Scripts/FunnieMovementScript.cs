@@ -13,7 +13,7 @@ public class FunnieMovementScript : MonoBehaviour {
 
 	float angle;
 	
-	float distance = 5f;
+    float heightDistance = 8f;
 	
 	
 	// Use this for initialization
@@ -51,7 +51,7 @@ public class FunnieMovementScript : MonoBehaviour {
 		if(handRight.transform.position.y < shoulderCenter.transform.position.y-0.1f&& handLeft.transform.position.y < shoulderCenter.transform.position.y-0.1f)
 		{
 			this.gameObject.transform.parent.transform.position = new Vector3(	this.gameObject.transform.parent.transform.position.x,
-																				this.gameObject.transform.parent.transform.position.y - distance * Time.deltaTime,
+																				this.gameObject.transform.parent.transform.position.y - heightDistance * Time.deltaTime,
 																				this.gameObject.transform.parent.transform.position.z);
 			
 		}
@@ -59,7 +59,7 @@ public class FunnieMovementScript : MonoBehaviour {
 		if(handRight.transform.position.y > shoulderCenter.transform.position.y+0.1f && handLeft.transform.position.y > shoulderCenter.transform.position.y+0.1f)
 		{
 			this.gameObject.transform.parent.transform.position = new Vector3(	this.gameObject.transform.parent.transform.position.x,
-																				this.gameObject.transform.parent.transform.position.y + distance * Time.deltaTime,
+                                                                                this.gameObject.transform.parent.transform.position.y + heightDistance * Time.deltaTime,
 																				this.gameObject.transform.parent.transform.position.z);
 			
 		}

@@ -1,4 +1,4 @@
-Shader "Custom/CurvedVertexes" 
+Shader "Custom/CurvedVertexesNew" 
 {
     Properties 
     {

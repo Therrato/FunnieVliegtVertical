@@ -59,6 +59,7 @@ namespace Assets.Scripts
             set { _bananas = value; }
         }
 
+
         #endregion
 
       /// <summary>
