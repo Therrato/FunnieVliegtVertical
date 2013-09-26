@@ -19,9 +19,9 @@ public class SpawnWorldScript : MonoBehaviour {
 	// Use this for initialization
     public void Awake()
     {
-       // LevelSettings buildableResources = GameObject.Find("GameSettings").GetComponent<GameSettingsScript>().availableResources;
-      //  availableResources = new LevelSettings(buildableResources.bananas,buildableResources.obstacles,buildableResources.monkeys,buildableResources.figures,new Goal());
-		availableResources = new LevelSettings(true,true,true,true, new Goal());
+        LevelSettings buildableResources = GameObject.Find("GameSettings").GetComponent<GameSettingsScript>().availableResources;
+        availableResources = new LevelSettings(buildableResources.bananas,buildableResources.obstacles,buildableResources.monkeys,buildableResources.figures,new Goal());
+		//availableResources = new LevelSettings(true,true,true,true, new Goal());
         statHandler = GameObject.Find("InitHolder").GetComponent<InitScript>();
     }
 

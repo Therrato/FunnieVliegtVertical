@@ -6,8 +6,8 @@ public class GameSettingsScript : MonoBehaviour
 {
 	public LevelSettings availableResources;
 	
-	public bool bananaToggle;
-    public bool obstacleToggle;
+	public bool bananaToggle = true;
+    public bool obstacleToggle = true;
     public bool monkeyToggle;
     public bool figureToggle;
 
@@ -24,6 +24,7 @@ public class GameSettingsScript : MonoBehaviour
 	// Use this for initialization
 	void Awake()
 	{
+        timeGoal = 45;
 		DontDestroyOnLoad(this);
 	}	
 	
