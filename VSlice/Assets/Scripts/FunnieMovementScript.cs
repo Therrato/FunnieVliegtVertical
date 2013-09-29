@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections;
 using Kinect;
+using System;
 
 public class FunnieMovementScript : MonoBehaviour {
 	
@@ -10,6 +11,11 @@ public class FunnieMovementScript : MonoBehaviour {
 	public GameObject handRight;
 	public GameObject shoulderCenter;
     private float funniespeed = 35;
+    private float funnieMaxSpeed = 80;
+    private bool _hasFeather = false;
+    private float featherExtraSpeed = 5;
+    private float featherDuration = 5;
+    private DateTime featherPickupTime;
 
 	float angle;
 	
@@ -26,6 +32,7 @@ public class FunnieMovementScript : MonoBehaviour {
 	// Update is called once per frame
 	void Update () 
 	{
+        if (_hasFeather)checkFeatherDuration();
         increaseSpeed();
 		updatePosition();
 		if((handRight.transform.position.y - handLeft.transform.position.y) != 0)
@@ -41,6 +48,13 @@ public class FunnieMovementScript : MonoBehaviour {
 		else return;
 		
 	}
+
+    private void checkFeatherDuration()
+    {
+
+        TimeSpan runtime = DateTime.Now.Subtract(featherPickupTime);
+        if (runtime.Seconds > featherDuration) featherStoppedWorking();
+    }
 	
 	void updatePosition()
 	{
@@ -79,8 +93,41 @@ public class FunnieMovementScript : MonoBehaviour {
 
     public void increaseSpeed()
     {
+        if (funnieMaxSpeed > funniespeed)
+        {
+            funniespeed += 0.5f * Time.deltaTime;
+        }
+    }
 
-        funniespeed += 0.5f *Time.deltaTime;
+    public void CollectsFeather()
+    {
+        featherPickupTime = DateTime.Now;
+        if (funniespeed + featherExtraSpeed >= funnieMaxSpeed + featherExtraSpeed)
+        {
+            funniespeed = funnieMaxSpeed + featherExtraSpeed;
+        }
+        else
+        {
+            funniespeed += featherExtraSpeed;
+        }
 
+        _hasFeather = true;
+    }
+
+    public void featherStoppedWorking()
+    {
+        if (funniespeed > funnieMaxSpeed)
+        {
+            funniespeed = funnieMaxSpeed;
+        }
+        _hasFeather = false;
+    }
+    /// <summary>
+    /// has the player optained a feather?
+    /// </summary>
+    /// <returns>true or false</returns>
+    public bool hasFeather()
+    {
+        return _hasFeather;
     }
 }

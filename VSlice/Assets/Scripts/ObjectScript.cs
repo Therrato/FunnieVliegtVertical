@@ -6,6 +6,7 @@ public class ObjectScript : MonoBehaviour {
 	
 	
 	public InitScript statHandler;
+    public bool isFeather;
 	// Use this for initialization
 	
 	void Awake()
@@ -27,10 +28,20 @@ public class ObjectScript : MonoBehaviour {
 	{
 		if(other.name == "BIRD")
 		{
-			//Debug.Log (other.name + " lol");
-			statHandler.playerStats.bananas += 1;
-			//Debug.Log(statHandler.playerStats.bananas);
-			Destroy(this.gameObject);	
+            if (isFeather)
+            {
+                other.transform.parent.GetComponent<FunnieMovementScript>().CollectsFeather();
+                statHandler.playerStats.feathersCollected += 1;
+              
+            }
+            else
+            {
+               
+                statHandler.playerStats.bananas += 1;
+                
+                
+            }
+            Destroy(this.gameObject);
 		}else return;
 	}
 }

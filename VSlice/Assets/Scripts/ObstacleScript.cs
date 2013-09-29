@@ -2,7 +2,19 @@ using UnityEngine;
 using System.Collections;
 using Assets.Scripts;
 
-public class ObstacleScript : MonoBehaviour {
+public class ObstacleScript : MonoBehaviour
+{
+    #region Documentation
+    /*
+     * 
+     * 
+     * 
+     * 
+     * 
+     * 
+     */
+    #endregion
+
 
     public ObstacleOccupation ocupies;
     public int laneswide;
@@ -32,10 +44,20 @@ public class ObstacleScript : MonoBehaviour {
     {
        	if(other.name == "BIRD")
 		{
-			funnie.setFunnieSpeed();
-            statHandler.playerStats.obstaclesHit += 1;
-			
-			Destroy(this.gameObject);	
+            if (funnie.hasFeather())
+            {
+
+                funnie.setFunnieSpeed();
+                statHandler.playerStats.obstaclesHit += 1;
+
+                Destroy(this.gameObject);
+            }
+            else
+            {
+                // implement crushings sound here
+                Destroy(this.gameObject);
+            }
+
 		}else return;
     }
 }
