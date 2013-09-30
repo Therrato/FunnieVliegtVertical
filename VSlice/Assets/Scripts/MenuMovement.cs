@@ -24,6 +24,8 @@ public class MenuMovement : MonoBehaviour
     private int depth = 5;
     private Vector2 mousePos;
     private Vector3 wantedPos;
+    private Vector3 previousPos = new Vector3(0,0,0);
+    private bool firstStart;
     
 
 
@@ -45,15 +47,26 @@ public class MenuMovement : MonoBehaviour
 
         if (!followMouse)
         {
-            this.transform.position = new Vector3(handRight.transform.position.x, handRight.transform.position.y,0);
-            objPos = myCam.WorldToScreenPoint(handRight.transform.position);
+            if (previousPos.x == 0)
+            {
+                previousPos = new Vector3(handRight.transform.position.x, handRight.transform.position.y, 0);
+            }
+            else {
+               // Debug.Log(previousPos.x - handRight.transform.position.x);
+                this.transform.position = new Vector3(this.transform.position.x + (handRight.transform.position.x - previousPos.x)*8, this.transform.position.y + (handRight.transform.position.y - previousPos.y)*5, 0.0f);
+                previousPos = handRight.transform.position;
+            }
+          //  this.transform.position = new Vector3(handRight.transform.position.x * 100, handRight.transform.position.y * 100, 0);
+          //  objPos = myCam.WorldToScreenPoint(handRight.transform.position);
+
+            
         }
         else
         {
             this.transform.position = wantedPos;
         }
 	}
-
+   
     void OnGUI()
     {
         if (!followMouse)

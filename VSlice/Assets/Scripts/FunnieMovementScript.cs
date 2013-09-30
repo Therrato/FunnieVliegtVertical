@@ -11,10 +11,10 @@ public class FunnieMovementScript : MonoBehaviour {
 	public GameObject handRight;
 	public GameObject shoulderCenter;
     private float funniespeed = 35;
-    private float funnieMaxSpeed = 80;
+    private float funnieMaxSpeed = 40;
     private bool _hasFeather = false;
-    private float featherExtraSpeed = 5;
-    private float featherDuration = 5;
+    private float featherExtraSpeed = 15;
+    private float featherDuration = 2;
     private DateTime featherPickupTime;
 
 	float angle;
