@@ -24,6 +24,8 @@ public class ObstacleScript : MonoBehaviour
 	public FunnieMovementScript funnie;
     public InitScript statHandler;
 
+    private bool hit = false;
+
 
 	// Use this for initialization
     void Awake()
@@ -44,20 +46,26 @@ public class ObstacleScript : MonoBehaviour
     {
        	if(other.name == "BIRD")
 		{
-            if (funnie.hasFeather())
+            if (!funnie.hasFeather())
             {
 
                 funnie.setFunnieSpeed();
                 statHandler.playerStats.obstaclesHit += 1;
-
+                hit = true;
                 Destroy(this.gameObject);
             }
             else
             {
                 // implement crushings sound here
+                hit = true;
+                
                 Destroy(this.gameObject);
             }
 
 		}else return;
+    }
+    void onDestroy()
+    {
+        if(!hit)statHandler.playerStats.obstaclesPassed += 1;
     }
 }
