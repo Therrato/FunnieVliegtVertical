@@ -58,7 +58,7 @@ public class FunnieMovementScript : MonoBehaviour {
 	
 	void updatePosition()
 	{
-		this.gameObject.transform.parent.transform.Translate(angle/8*Time.deltaTime,0,0);
+		this.gameObject.transform.parent.transform.Translate(((angle/8*Time.deltaTime)*35/funniespeed),0,0);
 		
 		if(handRight.transform.position.y < shoulderCenter.transform.position.y-0.1f&& handLeft.transform.position.y < shoulderCenter.transform.position.y-0.1f)
 		{

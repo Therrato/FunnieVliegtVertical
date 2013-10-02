@@ -138,7 +138,7 @@ public class ItemSpawner : MonoBehaviour {
                 {
 
                     toPlaceObstacle.transform.parent = tileToFill.transform;
-                    toPlaceObstacle.transform.position = new Vector3((1 - 1) * 20 - 10, 0f, i * 10.0f + tileToFill.transform.position.z - 50);
+                    toPlaceObstacle.transform.position = new Vector3((1 - 1) * 20 - 10, 2.5f, i * 10.0f + tileToFill.transform.position.z - 50);
                     for (int j = 0; j < 3; j++)
                     {
                        spaceUsed[j, 0, i] = true;

@@ -32,7 +32,12 @@ public class SpawnWorldScript : MonoBehaviour {
 			newTile.transform.position = new Vector3(0,0,i*-100+50);
 			newTile.transform.parent = this.gameObject.transform;
 			spawnedTiles[i] = newTile;
-            newTile.GetComponent<TileScript>().fillInTileWithObstacles(availableResources);
+            if (i > 2)
+            {
+
+                newTile.GetComponent<TileScript>().fillInTileWithObstacles(availableResources); 
+            }
+            
 			tilesSpawned++;
 		}
 	
