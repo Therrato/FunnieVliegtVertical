@@ -86,6 +86,7 @@
      <Compile Include="Assets\Scripts\ObstacleOccupation.cs" />
      <Compile Include="Assets\Scripts\ObstacleScript.cs" />
      <Compile Include="Assets\Scripts\PlayerStats.cs" />
+     <Compile Include="Assets\Scripts\SideTreeScript.cs" />
      <Compile Include="Assets\Scripts\SpawnWorldScript.cs" />
      <Compile Include="Assets\Scripts\Stats.cs" />
      <Compile Include="Assets\Scripts\TileScript.cs" />
