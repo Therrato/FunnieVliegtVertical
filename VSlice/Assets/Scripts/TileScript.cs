@@ -11,7 +11,7 @@ public class TileScript : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void LateUpdate () {
 		
 		if (this.transform.position.z >= 100){
 			this.gameObject.transform.parent.GetComponent<SpawnWorldScript>().spawnNewTile(this.gameObject);

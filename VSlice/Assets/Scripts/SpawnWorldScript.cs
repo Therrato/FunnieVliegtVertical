@@ -26,7 +26,7 @@ public class SpawnWorldScript : MonoBehaviour {
     }
 
 	void Start () {
-		for (int i =0; i<4;i++){
+		for (int i =0; i<spawnedTiles.Length;i++){
 			//GameObject newTile =  (GameObject)Instantiate(tiles[Random.Range(0,tiles.Length)]);// start if multiple tiles
             GameObject newTile = (GameObject)Instantiate(tiles[0]);
 			newTile.transform.position = new Vector3(0,0,i*-100+50);

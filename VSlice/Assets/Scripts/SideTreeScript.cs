@@ -3,6 +3,7 @@ using System.Collections;
 
 public class SideTreeScript : MonoBehaviour {
     public Material[] posibleMaterials;
+    public bool isEndTree = false;
 
 	// Use this for initialization
 	void Start () {
@@ -18,7 +19,7 @@ public class SideTreeScript : MonoBehaviour {
     {
         this.gameObject.renderer.material = posibleMaterials[Random.Range(0, posibleMaterials.Length)];
         this.gameObject.transform.Rotate(new Vector3(0f, Random.Range(0, 360), 0f));
-        this.gameObject.transform.localScale = new Vector3((1 + Random.value/3), (1 + Random.value/3), (1 + Random.value/3));
+        if(!isEndTree)this.gameObject.transform.localScale = new Vector3((1 + Random.value/3), (1 + Random.value/3), (1 + Random.value/3));
 
 
     }

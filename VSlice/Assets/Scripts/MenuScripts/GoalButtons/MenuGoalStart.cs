@@ -16,7 +16,7 @@ public class MenuGoalStart : MonoBehaviour
     void OnTriggerStay()
     {
         menu.saveSettings++;
-        Debug.Log(menu.saveSettings);
+       // Debug.Log(menu.saveSettings);
     }
 
     void OnTriggerExit()

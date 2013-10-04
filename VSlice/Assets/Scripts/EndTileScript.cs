@@ -12,4 +12,15 @@ public class EndTileScript : MonoBehaviour {
 	void Update () {
 	
 	}
+
+    void OnTriggerEnter(Collider coll)
+    {
+        Debug.Log("i hit something" + coll.name);
+        if (coll.name == "BIRD")
+        {
+            this.gameObject.transform.parent.transform.parent.GetComponent<SpawnWorldScript>().endTileReached = true;
+            Debug.Log("EndReached");
+        }
+    }
+    
 }

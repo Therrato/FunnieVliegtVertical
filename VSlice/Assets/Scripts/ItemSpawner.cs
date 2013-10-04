@@ -55,7 +55,7 @@ public class ItemSpawner : MonoBehaviour {
         {
             int type = Random.Range(0, 4); 
             if (type == 1){// spawn botlane only
-                Debug.Log("Try To Spawn");
+              //  Debug.Log("Try To Spawn");
                 int lanePos = Random.Range(0,3);
                 GameObject toPlaceObstacle = Instantiate(bottomLaneOnly[Random.Range(0, bottomLaneOnly.Length)]) as GameObject;
                 int[] takesUp = toPlaceObstacle.GetComponent<ObstacleScript>().ocupies.getOccupation();
@@ -76,13 +76,13 @@ public class ItemSpawner : MonoBehaviour {
                 }
                 else
                 {
-                    Debug.Log("failed To Spawn");
+                    //Debug.Log("failed To Spawn");
                     Destroy(toPlaceObstacle);
                 }
             }
             if (type == 2) // side only all height
             {
-                Debug.Log("Try To Spawn side only");
+                //Debug.Log("Try To Spawn side only");
                 int laneHeight = Random.Range(0, 3);
                 GameObject toPlaceObstacle = Instantiate(sideOnlyAllheight[Random.Range(0,sideOnlyAllheight.Length)]) as GameObject;
                 int[] takesUp = toPlaceObstacle.GetComponent<ObstacleScript>().ocupies.getOccupation();
@@ -118,14 +118,14 @@ public class ItemSpawner : MonoBehaviour {
                 }
                 else
                 {
-                    Debug.Log("failed To Spawn");
+                  //  Debug.Log("failed To Spawn");
                     Destroy(toPlaceObstacle);
                 }
 
             }
             if (type ==3) // spawn full width
             {
-                Debug.Log("Try To Spawn full width");
+              //  Debug.Log("Try To Spawn full width");
                 GameObject toPlaceObstacle = Instantiate(fullWidthBotLane[Random.Range(0, fullWidthBotLane.Length)]) as GameObject;
                 int[] takesUp = toPlaceObstacle.GetComponent<ObstacleScript>().ocupies.getOccupation();
                 bool canPlace = true;
@@ -146,7 +146,7 @@ public class ItemSpawner : MonoBehaviour {
                 }
                 else
                 {
-                    Debug.Log("failed To Spawn");
+                    //Debug.Log("failed To Spawn");
                     Destroy(toPlaceObstacle);
                 }
             }
@@ -178,17 +178,21 @@ public class ItemSpawner : MonoBehaviour {
             bananasLeftToSpawn--;
             if (!spaceUsed[lastSpawnedBanana.x + 1, lastSpawnedBanana.y + 1, i]) // if there is place
             {
+                float heightSpawn;
                 GameObject newPicKup;
-                if (Random.Range(0, 10) == 1)
+                if (Random.Range(0, 5) ==1)
                 {
                    newPicKup = Instantiate(pickupFruits[1]) as GameObject;
+                   heightSpawn = 15;
+                   
 
                 }
                 else { 
-                    newPicKup = Instantiate(pickupFruits[0]) as GameObject; 
+                    newPicKup = Instantiate(pickupFruits[0]) as GameObject;
+                    heightSpawn = 12;
                 }
                 newPicKup.transform.parent = tileToFill.transform;
-                newPicKup.transform.position = new Vector3(lastSpawnedBanana.x * 20f, lastSpawnedBanana.y * 10f + 15f, i * 10f + tileToFill.transform.position.z);
+                newPicKup.transform.position = new Vector3(lastSpawnedBanana.x * 20f, lastSpawnedBanana.y * 10f + heightSpawn, i * 10f + tileToFill.transform.position.z);
                 spaceUsed[lastSpawnedBanana.x + 1, lastSpawnedBanana.y + 1, i] = true;
                 
             }
