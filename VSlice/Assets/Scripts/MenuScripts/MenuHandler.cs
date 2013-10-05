@@ -7,6 +7,7 @@ public class MenuHandler : MonoBehaviour
 
     public int startCounter = 0;
     public int goalCounter = 0;
+    public int minutesModeCounter = 0;
     public int helpCounter = 0;
     public int creditsCounter = 0;
     public int exitCounter = 0;
@@ -79,15 +80,26 @@ public class MenuHandler : MonoBehaviour
             startGame();
         }
 
+        if (minutesModeCounter > 100)
+        {
+            start5MinuteMode();
+        }
+
 
 	}
 
     void startGame()
     {
+        // set goal mode  1 round
         gameSettings.createNewGoal();
         gameSettings.instantiateNewLevelSettings();
         Debug.Log("Load level");
         Application.LoadLevel(1);
+    }
+
+    void start5MinuteMode()
+    {
+        // start 5 minute mode, 
     }
 
 

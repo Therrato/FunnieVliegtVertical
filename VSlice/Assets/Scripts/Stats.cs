@@ -11,12 +11,12 @@ namespace Assets.Scripts
        
         #region privates
 
-        private int _bananas;
-        private int _obstaclesPassed;
-        private int _obstaclesHit;
-        private int _feathersCollected;
-        private int _figuresPassed;
-        private int _tilesPassed;
+        private int _bananas = 0;
+        private int _obstaclesPassed = 0;
+        private int _obstaclesHit = 0;
+        private int _feathersCollected = 0;
+        private int _figuresPassed= 0;
+        private int _tilesPassed= 0;
 
         public int tilesPassed
         {
@@ -79,9 +79,12 @@ namespace Assets.Scripts
             duration = secondsToPlay;
         }
 
+        /// <summary>
+        /// default stats
+        /// </summary>
         public Stats()
         {
-
+            duration = 45;
         }
 
  

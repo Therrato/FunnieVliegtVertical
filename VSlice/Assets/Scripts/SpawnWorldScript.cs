@@ -94,5 +94,11 @@ public class SpawnWorldScript : MonoBehaviour {
     {
         goalReached = setTo;
     }
+
+    public void gameEnded()
+    {
+        endTileReached = true;
+
+    }
 		
 }
