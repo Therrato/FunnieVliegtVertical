@@ -90,16 +90,22 @@ public class MenuHandler : MonoBehaviour
 
     void startGame()
     {
-        // set goal mode  1 round
+        
         gameSettings.createNewGoal();
         gameSettings.instantiateNewLevelSettings();
-        Debug.Log("Load level");
+        
+        Debug.Log("Load GoalMode");
         Application.LoadLevel(1);
     }
 
     void start5MinuteMode()
     {
-        // start 5 minute mode, 
+        
+        gameSettings.create5Minute();
+        gameSettings.instantiateNewLevelSettings();
+        
+        Debug.Log("Load 5min");
+        Application.LoadLevel(1);
     }
 
 

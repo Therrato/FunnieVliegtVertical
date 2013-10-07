@@ -25,6 +25,18 @@ namespace Assets.Scripts
 
         }
 
+        public Goal(Stats playerGoals, int roundsLeft)
+        {
+            this.bananas = playerGoals.bananas;
+            this.obstaclesPassed = playerGoals.obstaclesPassed;
+            this.feathersCollected = playerGoals.feathersCollected;
+            this.duration = playerGoals.duration;
+            this.figuresPassed = playerGoals.figuresPassed;
+            this.obstaclesHit = playerGoals.obstaclesHit;
+            this.tilesPassed = playerGoals.tilesPassed;
+            this.rounds = roundsLeft;
+        }
+
         /// <summary>
         /// will check if all requerements for ending thelevel are met
         /// </summary>
@@ -44,6 +56,14 @@ namespace Assets.Scripts
             if (this.tilesPassed > playerStats.tilesPassed) return false;
 
             return true;
+        }
+
+        public bool nextLevel()
+        {
+            this.rounds--;
+            if (this.rounds == 0) return false;
+            else return true;
+
         }
 
         

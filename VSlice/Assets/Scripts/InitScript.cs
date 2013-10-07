@@ -18,10 +18,23 @@ public class InitScript : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         if (!worldSpawner.goalReached)worldSpawner.setGoalReached(NormalGoal.isGoalReached(playerStats));
+        if (worldSpawner.endTileReached)
+        {
+            if (NormalGoal.nextLevel())
+            {
+                Debug.Log(NormalGoal.rounds + " roundsLeft");
+                Application.LoadLevel(1);
+            }
+            else
+            {
+                Debug.Log("0 rounds left game should end");
+            }
+         
+        }
 	}
 	
 	void GatherBuildSettings(){
-        NormalGoal = new Goal();
+        NormalGoal = GameObject.Find("GameSettings").GetComponent<GameSettingsScript>().goalToreach;
         playerStats = new PlayerStats();
 	}
 }

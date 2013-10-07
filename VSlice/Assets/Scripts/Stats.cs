@@ -32,7 +32,7 @@ namespace Assets.Scripts
 
         #region Publics
 
-        
+        public int rounds;
          public int figuresPassed
         {
             get { return _figuresPassed; }
@@ -77,14 +77,17 @@ namespace Assets.Scripts
             _feathersCollected = feathersToCollect;
             _figuresPassed = figuresToPass;
             duration = secondsToPlay;
+            rounds = 1;
+            
         }
 
         /// <summary>
-        /// default stats
+        /// 5 minutmode, default 
         /// </summary>
         public Stats()
         {
-            duration = 45;
+            rounds = 5;
+            duration = 10;
         }
 
  

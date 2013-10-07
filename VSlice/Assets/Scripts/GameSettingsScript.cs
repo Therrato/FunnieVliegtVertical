@@ -17,7 +17,7 @@ public class GameSettingsScript : MonoBehaviour
     public int obstaclesPassedGoal;
     public int timeGoal;
     public int feathersGoal;
-    public int roundsLeft;
+    //public int roundsLeft;
     public Goal goalToreach = new Goal();
 
 
@@ -38,16 +38,18 @@ public class GameSettingsScript : MonoBehaviour
     /// </summary>
     public void createNewGoal()
     {
-        roundsLeft = 1;
-        goalToreach = new Goal(new Stats(bannanasGoal,obstaclesPassedGoal,feathersGoal,figuresPassedGoal,timeGoal));
+        goalToreach = new Goal(new Stats(bannanasGoal,obstaclesPassedGoal,feathersGoal,figuresPassedGoal,timeGoal),1);
 
     }
     public void create5Minute()
     {
-        roundsLeft = 5;
-        goalToreach = new Goal(new Stats());
+       
+        goalToreach = new Goal(new Stats(),5);
 
     }
+
+
+    
 
 
 }

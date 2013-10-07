@@ -21,7 +21,7 @@ namespace Assets.Scripts
         //
         // allow banana's by setting true;
         //
-        public LevelSettings(bool bannanaOn, bool obstacleOn, bool monkeysOn,bool figuresOn, Goal playerGoal )
+        public LevelSettings(bool bannanaOn, bool obstacleOn, bool monkeysOn,bool figuresOn, Goal playerGoal)
         {
             bananas = bannanaOn;
             obstacles = obstacleOn;
@@ -30,6 +30,7 @@ namespace Assets.Scripts
 
             
         }
+
 
     }
 }
