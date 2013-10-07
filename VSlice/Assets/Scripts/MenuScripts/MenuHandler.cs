@@ -19,18 +19,31 @@ public class MenuHandler : MonoBehaviour
     public LevelSettings availableResources;
     public GameSettingsScript gameSettings;
 
+    public MenuMovement cursor;
+
+    public GUITexture backgroundHolder;
+    public Texture2D startScreen;
+    public Texture2D gamemodeScreen;
+    public Texture2D choiceScreen;
+    public Texture2D creditScreen;
+    public Texture2D helpScreen;
+
     public int menuDepth;
 
+
+   
 	// Use this for initialization
 	void Start ()
     {
         gameSettings = GameObject.Find("GameSettings").GetComponent<GameSettingsScript>();
-	
+        backgroundHolder = GameObject.Find("Background").GetComponent<GUITexture>();
+        cursor = GameObject.Find("HandPointer").GetComponent<MenuMovement>();
 	}
 	
 	// Update is called once per frame
 	void Update () 
     {
+        cursorCheck();
         depthChecker();
         if (startCounter > 100)
         {
@@ -88,24 +101,75 @@ public class MenuHandler : MonoBehaviour
 
 	}
 
+    void cursorCheck()
+    {
+
+        if (startCounter <= 25 &&
+            goalCounter <= 25 &&
+            minutesModeCounter <= 25 &&
+            helpCounter <= 25 &&
+            creditsCounter <= 25 &&
+            exitCounter <= 25 &&
+            backCounter <= 25 &&
+            saveSettings <= 25)
+        {
+            cursor.aTexture = cursor.emptyCursor;
+
+            return;
+        }
+
+        if (startCounter <= 50 && 
+            goalCounter <= 50 && 
+            minutesModeCounter <= 50 && 
+            helpCounter <= 50 && 
+            creditsCounter <= 50 &&
+            exitCounter <= 50 &&
+            backCounter <= 50 &&
+            saveSettings <= 50)
+        {
+            cursor.aTexture = cursor.phase1Cursor;
+            return;
+        }
+        if (startCounter <= 75 &&
+            goalCounter <= 75 &&
+            minutesModeCounter <= 75&&
+            helpCounter <= 75 &&
+            creditsCounter <= 75 &&
+            exitCounter <= 75 &&
+            backCounter <= 75 &&
+            saveSettings <= 75)
+        {
+            cursor.aTexture = cursor.phase2Cursor;
+            return;
+        }
+        if (startCounter <= 100 &&
+            goalCounter <= 100 &&
+            minutesModeCounter <= 100 &&
+            helpCounter <= 100 &&
+            creditsCounter <= 100 &&
+            exitCounter <= 100 &&
+            backCounter <= 100 &&
+            saveSettings <= 100)
+        {
+            cursor.aTexture = cursor.phase3Cursor;
+            return;
+        }
+
+
+    }
+
     void startGame()
     {
-        
+        // set goal mode  1 round
         gameSettings.createNewGoal();
         gameSettings.instantiateNewLevelSettings();
-        
-        Debug.Log("Load GoalMode");
+        Debug.Log("Load level");
         Application.LoadLevel(1);
     }
 
     void start5MinuteMode()
     {
-        
-        gameSettings.create5Minute();
-        gameSettings.instantiateNewLevelSettings();
-        
-        Debug.Log("Load 5min");
-        Application.LoadLevel(1);
+        // start 5 minute mode, 
     }
 
 
@@ -116,28 +180,33 @@ public class MenuHandler : MonoBehaviour
             case 0:
 
                this.transform.position = new Vector3(0, 0, 0);
+               backgroundHolder.guiTexture.texture = startScreen;
 
                 break;
             case 1:
 
                 this.transform.position = new Vector3(100, 0, 0);
+                backgroundHolder.guiTexture.texture = gamemodeScreen;
 
                 break;
 
             case 2:
 
                 this.transform.position = new Vector3(200, 0, 0);
+                backgroundHolder.guiTexture.texture = choiceScreen;
 
                 break;
             case 3:
 
                 this.transform.position = new Vector3(0, 100, 0);
+                backgroundHolder.guiTexture.texture = creditScreen;
 
                 break;
 
             case 4:
 
                 this.transform.position = new Vector3(0, 200, 0);
+                backgroundHolder.guiTexture.texture = helpScreen;
 
                 break;
         }

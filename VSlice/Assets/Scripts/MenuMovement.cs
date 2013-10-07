@@ -10,6 +10,11 @@ public class MenuMovement : MonoBehaviour
     public Vector3 objPos;
     public Texture2D aTexture;
 
+    public Texture2D emptyCursor;
+    public Texture2D phase1Cursor;
+    public Texture2D phase2Cursor;
+    public Texture2D phase3Cursor;
+
     public GameObject parent;
 
     public int texWidth = 75;
@@ -57,7 +62,7 @@ public class MenuMovement : MonoBehaviour
                 previousPos = handRight.transform.position;
             }
           //  this.transform.position = new Vector3(handRight.transform.position.x * 100, handRight.transform.position.y * 100, 0);
-          //  objPos = myCam.WorldToScreenPoint(handRight.transform.position);
+            objPos = myCam.WorldToScreenPoint(this.transform.position);
 
             
         }
