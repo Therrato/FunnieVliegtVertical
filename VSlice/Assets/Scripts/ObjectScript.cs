@@ -7,6 +7,8 @@ public class ObjectScript : MonoBehaviour {
 	
 	public InitScript statHandler;
     public bool isFeather;
+	public AudioClip bananaSound;
+	public AudioSource audio;
 	// Use this for initialization
 	
 	void Awake()
@@ -15,7 +17,7 @@ public class ObjectScript : MonoBehaviour {
 	}
 	void Start () 
 	{
-		
+	
 	}
 	
 	// Update is called once per frame
@@ -36,9 +38,15 @@ public class ObjectScript : MonoBehaviour {
             }
             else
             {
-               
-                statHandler.playerStats.bananas += 1;
-                
+				audio.PlayOneShot(bananaSound);
+				audio.pitch += 0.1f;
+				//if(audio.pitch == 1.0) {
+					//audio.pitch = 0.1;				
+				//} else 
+					//bananaSound.pitch = 1;
+					Destroy(gameObject); 		
+				
+                statHandler.playerStats.bananas += 1;           
                 
             }
             Destroy(this.gameObject);

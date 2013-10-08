@@ -25,6 +25,8 @@ public class ObstacleScript : MonoBehaviour
     public InitScript statHandler;
 
     private bool hit = false;
+	
+	
 
 
 	// Use this for initialization
@@ -60,6 +62,8 @@ public class ObstacleScript : MonoBehaviour
                 hit = true;
                 
                 Destroy(this.gameObject);
+				
+				
             }
 
 		}else return;
