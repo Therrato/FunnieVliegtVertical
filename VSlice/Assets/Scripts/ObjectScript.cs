@@ -8,7 +8,8 @@ public class ObjectScript : MonoBehaviour {
 	public InitScript statHandler;
     public bool isFeather;
 	public AudioClip bananaSound;
-	public AudioSource audio;
+
+    private static float pitch = 1;
 	// Use this for initialization
 	
 	void Awake()
@@ -17,7 +18,7 @@ public class ObjectScript : MonoBehaviour {
 	}
 	void Start () 
 	{
-	
+       
 	}
 	
 	// Update is called once per frame
@@ -38,8 +39,10 @@ public class ObjectScript : MonoBehaviour {
             }
             else
             {
-				audio.PlayOneShot(bananaSound);
-				audio.pitch += 0.1f;
+                audio.pitch = pitch;
+                AudioSource.PlayClipAtPoint(bananaSound, transform.position);
+                pitch += 0.1f;
+                Debug.Log("Audio Pitch: "+audio.pitch + ", variable pitch: " + pitch);
 				//if(audio.pitch == 1.0) {
 					//audio.pitch = 0.1;				
 				//} else 
