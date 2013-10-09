@@ -41,7 +41,7 @@ public class ObjectScript : MonoBehaviour {
             {
                 audio.pitch = pitch;
                 AudioSource.PlayClipAtPoint(bananaSound, transform.position);
-                pitch += 0.1f;
+                pitch += 0.05f;
                 Debug.Log("Audio Pitch: "+audio.pitch + ", variable pitch: " + pitch);
 				//if(audio.pitch == 1.0) {
 					//audio.pitch = 0.1;				
