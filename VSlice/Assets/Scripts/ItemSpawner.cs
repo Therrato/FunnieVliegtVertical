@@ -183,13 +183,13 @@ public class ItemSpawner : MonoBehaviour {
                 if (Random.Range(0, 5) ==1)
                 {
                    newPicKup = Instantiate(pickupFruits[1]) as GameObject;
-                   heightSpawn = 15;
+                   heightSpawn = 16;
                    
 
                 }
                 else { 
                     newPicKup = Instantiate(pickupFruits[0]) as GameObject;
-                    heightSpawn = 12;
+                    heightSpawn = 13;
                 }
                 newPicKup.transform.parent = tileToFill.transform;
                 newPicKup.transform.position = new Vector3(lastSpawnedBanana.x * 20f, lastSpawnedBanana.y * 10f + heightSpawn, i * 10f + tileToFill.transform.position.z);
