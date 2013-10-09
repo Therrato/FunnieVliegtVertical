@@ -19,10 +19,16 @@ public class FunnieMovementScript : MonoBehaviour {
 
 	float angle;
 	
-    float heightDistance = 8f;
+    float heightDistance = 14f;
 	
 	
 	// Use this for initialization
+    void Awake()
+    {
+        handLeft = GameObject.Find("Hand_Left");
+        handRight= GameObject.Find("Hand_Right");
+        shoulderCenter = GameObject.Find("Shoulder_Center");
+    }
 	void Start () 
 	{
 		Debug.Log((handRight.transform.position.x - handLeft.transform.position.x));
@@ -58,7 +64,7 @@ public class FunnieMovementScript : MonoBehaviour {
 	
 	void updatePosition()
 	{
-		this.gameObject.transform.parent.transform.Translate(((angle/8*Time.deltaTime)*funniespeed/35),0,0);
+		this.gameObject.transform.parent.transform.Translate(((angle/4*Time.deltaTime)*funniespeed/35),0,0);
 		
 		if(handRight.transform.position.y < shoulderCenter.transform.position.y-0.1f&& handLeft.transform.position.y < shoulderCenter.transform.position.y-0.1f)
 		{
