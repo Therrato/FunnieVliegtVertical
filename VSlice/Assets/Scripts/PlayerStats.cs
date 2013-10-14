@@ -11,13 +11,18 @@ namespace Assets.Scripts
 
         public PlayerStats()
         {
-            beginTime = DateTime.Now;
+            setNewBeginTime();
         }
 
         public int calculateRunTime()
         {
             TimeSpan runtime = DateTime.Now.Subtract(beginTime);
             return runtime.Seconds;
+        }
+
+        public void setNewBeginTime()
+        {
+            beginTime = DateTime.Now;
         }
     }
 }

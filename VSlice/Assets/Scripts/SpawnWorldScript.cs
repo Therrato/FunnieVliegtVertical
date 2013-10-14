@@ -7,6 +7,7 @@ public class SpawnWorldScript : MonoBehaviour {
 	public int tilesSpawned=0;
 	public GameObject[] spawnedTiles;
 
+    public bool poseActive = true;
     public bool goalReached;
     public bool endTileSpawned;
     public bool endTileReached;
@@ -42,6 +43,13 @@ public class SpawnWorldScript : MonoBehaviour {
 		}
 	
 	}
+
+    public void deActivatePose()
+    {
+        poseActive = false;
+        GameObject.Find("InitHolder").GetComponent<InitScript>().playerStats.setNewBeginTime();
+        
+    }
 	
 	// Update is called once per frame
 	void Update () 
