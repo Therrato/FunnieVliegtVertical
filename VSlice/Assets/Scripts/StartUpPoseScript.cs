@@ -12,6 +12,7 @@ public class StartUpPoseScript : MonoBehaviour {
 
 
 
+
 	// Use this for initialization
 	void Start () {
         handLeft = GameObject.Find("Hand_Left");
@@ -60,6 +61,7 @@ public class StartUpPoseScript : MonoBehaviour {
             else if (duration.Seconds >= 3)
             {
                 GameObject.Find("World").GetComponent<SpawnWorldScript>().deActivatePose();
+
                 Destroy(this.gameObject);
             }
 
@@ -82,7 +84,14 @@ public class StartUpPoseScript : MonoBehaviour {
         {
             return false;
         }
-        else return true;
+        float angle = Mathf.Atan((handRight.transform.position.y - handLeft.transform.position.y) / (handRight.transform.position.x - handLeft.transform.position.x)) * Mathf.Rad2Deg * -1;
+        if (angle < 15 && angle > -15)
+        {
+            Debug.Log("angle correct");
+            return true;
+        }
+
+        return false;
 
     }
 }

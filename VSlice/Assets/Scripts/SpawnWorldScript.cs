@@ -43,7 +43,9 @@ public class SpawnWorldScript : MonoBehaviour {
 		}
 	
 	}
-
+    /// <summary>
+    /// de activates the pause that stops the world from turning and sets the round start time to now
+    /// </summary>
     public void deActivatePose()
     {
         poseActive = false;
@@ -88,7 +90,9 @@ public class SpawnWorldScript : MonoBehaviour {
             }
            
 	}
-	
+	/// <summary>
+	/// moves all tiles to the begining of the list and opens the last slot
+	/// </summary>
 	void ClearSpace(){
 	for (int i = 0; i< spawnedTiles.Length -1; i++){
 			spawnedTiles[i] = spawnedTiles[i+1];	

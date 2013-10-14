@@ -16,6 +16,7 @@ public class DeviceOrEmulator : MonoBehaviour {
 		else {
 			device.enabled = true;
 		}
+        DontDestroyOnLoad(this.gameObject);
 	}
 	
 	// Update is called once per frame

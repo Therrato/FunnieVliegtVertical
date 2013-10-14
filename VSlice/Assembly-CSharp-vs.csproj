@@ -94,6 +94,7 @@
      <Compile Include="Assets\Scripts\StartUpPoseScript.cs" />
      <Compile Include="Assets\Scripts\Stats.cs" />
      <Compile Include="Assets\Scripts\TileScript.cs" />
+     <Compile Include="Assets\Scripts\visualCountDownScript.cs" />
      <Compile Include="Assets\fiveMinMenu.cs" />
      <None Include="Assets\Asset\Shaders\Normal-Diffuse.shader" />
      <None Include="Assets\Standard Assets\Skyboxes\_skybox info.txt" />

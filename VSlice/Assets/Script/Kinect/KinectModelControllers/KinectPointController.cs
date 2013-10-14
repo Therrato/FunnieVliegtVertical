@@ -91,6 +91,7 @@ public class KinectPointController : MonoBehaviour {
 			Hip_Left, Knee_Left, Ankle_Left, Foot_Left,
 			Hip_Right, Knee_Right, Ankle_Right, Foot_Right};
 		//_bonePos = new Vector4[(int)BoneIndex.Num_Bones];
+        DontDestroyOnLoad(this.gameObject);
 		
 	}
 	

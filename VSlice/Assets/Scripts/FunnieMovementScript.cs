@@ -38,20 +38,23 @@ public class FunnieMovementScript : MonoBehaviour {
 	// Update is called once per frame
 	void Update () 
 	{
-        if (_hasFeather)checkFeatherDuration();
-        increaseSpeed();
-		updatePosition();
-		if((handRight.transform.position.y - handLeft.transform.position.y) != 0)
-		{	
-			
-			this.gameObject.transform.eulerAngles = new Vector3(0,0,Mathf.Atan((handRight.transform.position.y - handLeft.transform.position.y)/(handRight.transform.position.x-handLeft.transform.position.x))*Mathf.Rad2Deg*-1);
-			
-			angle = Mathf.Atan((handRight.transform.position.y - handLeft.transform.position.y)/
-								(handRight.transform.position.x-handLeft.transform.position.x))* Mathf.Rad2Deg;
-			//Debug.Log ("angle of arms "+angle);
-			
-		}
-		else return;
+        if (!GameObject.Find("World").GetComponent<SpawnWorldScript>().poseActive)
+        {
+            if (_hasFeather) checkFeatherDuration();
+            increaseSpeed();
+            updatePosition();
+            if ((handRight.transform.position.y - handLeft.transform.position.y) != 0)
+            {
+
+                this.gameObject.transform.eulerAngles = new Vector3(0, 0, Mathf.Atan((handRight.transform.position.y - handLeft.transform.position.y) / (handRight.transform.position.x - handLeft.transform.position.x)) * Mathf.Rad2Deg * -1);
+
+                angle = Mathf.Atan((handRight.transform.position.y - handLeft.transform.position.y) /
+                                    (handRight.transform.position.x - handLeft.transform.position.x)) * Mathf.Rad2Deg;
+                //Debug.Log ("angle of arms "+angle);
+
+            }
+            else return;
+        }
 		
 	}
 
