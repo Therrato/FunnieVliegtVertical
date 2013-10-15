@@ -8,6 +8,9 @@ public class ObjectScript : MonoBehaviour {
 	public InitScript statHandler;
     public bool isFeather;
 	public AudioClip bananaSound;
+    private LogSystem log;
+    private bool pickedUp = false;
+   
 
     private static float pitch = 1;
 	// Use this for initialization
@@ -15,10 +18,11 @@ public class ObjectScript : MonoBehaviour {
 	void Awake()
 	{
 		statHandler = GameObject.Find ("InitHolder").GetComponent<InitScript>();
+        
 	}
 	void Start () 
 	{
-       
+        log = GameObject.Find("LogSys(Clone)").GetComponent<LogSystem>();
 	}
 	
 	// Update is called once per frame
@@ -35,6 +39,8 @@ public class ObjectScript : MonoBehaviour {
             {
                 other.transform.parent.GetComponent<FunnieMovementScript>().CollectsFeather();
                 statHandler.playerStats.feathersCollected += 1;
+                log.pushEvent("FEATHER");
+               
               
             }
             else
@@ -49,10 +55,27 @@ public class ObjectScript : MonoBehaviour {
 					//bananaSound.pitch = 1;
 					Destroy(gameObject); 		
 				
-                statHandler.playerStats.bananas += 1;           
+                statHandler.playerStats.bananas += 1;
+                log.pushEvent("BANANA");
                 
             }
             Destroy(this.gameObject);
 		}else return;
 	}
+
+    void OnDestroy()
+    {
+        if (!pickedUp)
+        {
+            if (isFeather)
+            {
+                log.pushEvent("FEATHERMISSED");
+            }
+            else
+            {
+                // reset bananapitch here
+                log.pushEvent("BANANAMISSED");
+            }
+        }
+    }
 }

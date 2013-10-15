@@ -8,6 +8,7 @@ public class StartUpPoseScript : MonoBehaviour {
     public GameObject shoulderCenter;
     public Texture2D[] display;
     public bool positionTimerStarted = false;
+    public bool isDebug = false;
     public DateTime startTime;
 
 
@@ -24,7 +25,7 @@ public class StartUpPoseScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (checkPosition())
+        if (checkPosition()||isDebug)
         {
             countDown();
             this.guiTexture.texture = display[1];
@@ -87,7 +88,7 @@ public class StartUpPoseScript : MonoBehaviour {
         float angle = Mathf.Atan((handRight.transform.position.y - handLeft.transform.position.y) / (handRight.transform.position.x - handLeft.transform.position.x)) * Mathf.Rad2Deg * -1;
         if (angle < 15 && angle > -15)
         {
-            Debug.Log("angle correct");
+            
             return true;
         }
 

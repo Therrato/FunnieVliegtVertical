@@ -20,6 +20,7 @@ public class ObstacleScript : MonoBehaviour
     public int laneswide;
     public int lanesHigh;
     public int lanesDeep;
+    private LogSystem log;
 	
 	public FunnieMovementScript funnie;
     public InitScript statHandler;
@@ -34,9 +35,11 @@ public class ObstacleScript : MonoBehaviour
     {
         ocupies = new ObstacleOccupation(laneswide, lanesHigh, lanesDeep);
         statHandler = GameObject.Find("InitHolder").GetComponent<InitScript>();
+        
     }
 	void Start () {
-		funnie = GameObject.Find ("ParrotContainer").GetComponent<FunnieMovementScript>();
+		log = GameObject.Find("LogSys(Clone)").GetComponent<LogSystem>();
+        funnie = GameObject.Find ("ParrotContainer").GetComponent<FunnieMovementScript>();
 	}
 	
 	// Update is called once per frame
@@ -58,8 +61,8 @@ public class ObstacleScript : MonoBehaviour
             }
             else
             {
-                // implement crushings sound here
-                hit = true;
+                // funnie goest trough obstacle
+                
                 
                 Destroy(this.gameObject);
 				
@@ -68,8 +71,18 @@ public class ObstacleScript : MonoBehaviour
 
 		}else return;
     }
-    void onDestroy()
+
+    void OnDestroy()
     {
-        if(!hit)statHandler.playerStats.obstaclesPassed += 1;
+        if (!hit)
+        {
+            statHandler.playerStats.obstaclesPassed += 1;
+            log.pushEvent("PASSEDOBJECT");
+        }
+        else
+        {
+            log.pushEvent("HITOBJECT");
+        }
+
     }
 }

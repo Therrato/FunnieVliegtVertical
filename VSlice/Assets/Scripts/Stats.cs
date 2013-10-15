@@ -87,7 +87,7 @@ namespace Assets.Scripts
         public Stats()
         {
             rounds = 5;
-            duration = 10;
+            duration = 45;
         }
 
  

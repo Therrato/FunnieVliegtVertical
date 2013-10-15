@@ -12,6 +12,10 @@ public class InitScript : MonoBehaviour {
 	void Start () {
 		GatherBuildSettings();
         worldSpawner = GameObject.Find("World").GetComponent<SpawnWorldScript>();
+        if (GameObject.Find("LogSys(Clone)") == null)
+        {
+           GameObject log = Instantiate(Resources.Load("LogSys")) as GameObject;
+        }
        
 	}
 	
@@ -37,4 +41,9 @@ public class InitScript : MonoBehaviour {
         NormalGoal = GameObject.Find("GameSettings").GetComponent<GameSettingsScript>().goalToreach;
         playerStats = new PlayerStats();
 	}
+
+    public int getRound()
+    {
+        return 5 - NormalGoal.rounds;
+    }
 }

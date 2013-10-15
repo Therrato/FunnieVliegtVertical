@@ -31,7 +31,7 @@ public class FunnieMovementScript : MonoBehaviour {
     }
 	void Start () 
 	{
-		Debug.Log((handRight.transform.position.x - handLeft.transform.position.x));
+		
 		
 	}
 	

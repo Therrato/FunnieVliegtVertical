@@ -4,8 +4,15 @@ using System.Collections.Generic;
 using Assets.Scripts;
 
 public class LogSystem : MonoBehaviour {
-    private List<LogEvent> loggedEvents; 
+    private List<LogEvent> loggedEvents = new List<LogEvent>();
+    private InitScript gameInfo;
+    
 
+    void Awake()
+    {
+        DontDestroyOnLoad(this.gameObject);
+        gameInfo = GameObject.Find("InitHolder").GetComponent<InitScript>();
+    }
 	// Use this for initialization
 	void Start () {
 	
@@ -16,9 +23,10 @@ public class LogSystem : MonoBehaviour {
 	
 	}
 
-    public void pushEvent(LogEvent newEvent)
+    public void pushEvent(string logCode)
     {
-        loggedEvents.Add(newEvent);
+        Debug.Log(logCode);
+        loggedEvents.Add(new LogEvent(gameInfo.getRound(), logCode));
     }
 
     public List<LogEvent> getLogList()
