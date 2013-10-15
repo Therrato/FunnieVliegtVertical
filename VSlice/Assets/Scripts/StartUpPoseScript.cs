@@ -6,7 +6,7 @@ public class StartUpPoseScript : MonoBehaviour {
     public GameObject handLeft;
     public GameObject handRight;
     public GameObject shoulderCenter;
-    public Material[] display;
+    public Texture2D[] display;
     public bool positionTimerStarted = false;
     public DateTime startTime;
 
@@ -18,7 +18,7 @@ public class StartUpPoseScript : MonoBehaviour {
         handLeft = GameObject.Find("Hand_Left");
         handRight = GameObject.Find("Hand_Right");
         shoulderCenter = GameObject.Find("Shoulder_Center");
-        this.renderer.material = display[0];
+        this.guiTexture.texture = display[0];
 
 	}
 	
@@ -27,12 +27,12 @@ public class StartUpPoseScript : MonoBehaviour {
         if (checkPosition())
         {
             countDown();
-            this.renderer.material = display[1];
+            this.guiTexture.texture = display[1];
         }
         else
         {
             takePosition();
-            this.renderer.material = display[0];
+            this.guiTexture.texture = display[0];
         }
 	}
 
