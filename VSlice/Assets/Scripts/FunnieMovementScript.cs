@@ -85,7 +85,7 @@ public class FunnieMovementScript : MonoBehaviour {
 			
 		}
 		
-		this.gameObject.transform.parent.transform.position = new Vector3(	Mathf.Clamp(this.gameObject.transform.parent.transform.position.x, -15.5F, 15.5F),
+		this.gameObject.transform.parent.transform.position = new Vector3(	Mathf.Clamp(this.gameObject.transform.parent.transform.position.x, -18F, 18F),
 																			Mathf.Clamp(this.gameObject.transform.parent.transform.position.y, 2.0f, 27.0f), 
 																			40);		
 	}

@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections;
 using Assets.Scripts;
+using System;
 
 public class SpawnWorldScript : MonoBehaviour {
 	public GameObject[] tiles;
@@ -14,7 +15,6 @@ public class SpawnWorldScript : MonoBehaviour {
     public bool endTileSpawned;
     public bool endTileReached;
     public GameObject endTile;
-
 
 
     public LevelSettings availableResources;
@@ -72,7 +72,7 @@ public class SpawnWorldScript : MonoBehaviour {
 			Destroy(oldTile);
             if (!goalReached)
             {
-                GameObject newTile = (GameObject)Instantiate(tiles[Random.Range(0, tiles.Length)]);
+                GameObject newTile = (GameObject)Instantiate(tiles[UnityEngine.Random.Range(0, tiles.Length)]);
                 newTile.transform.position = new Vector3(0, 0, spawnedTiles[spawnedTiles.Length - 1].transform.position.z - 100);
                 newTile.transform.parent = this.gameObject.transform;
                 tilesSpawned++;
@@ -116,9 +116,9 @@ public class SpawnWorldScript : MonoBehaviour {
 
     public void gameEnded()
     {
-        log.pushEvent("ROUNDEND");
         endTileReached = true;
-
+        log.pushEvent("ROUNDEND");
     }
+
 		
 }

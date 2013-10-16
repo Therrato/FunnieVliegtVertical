@@ -9,7 +9,6 @@ public class FunnieAltMovementScript : MonoBehaviour
     public GameObject handRight;
     public GameObject shoulderCenter;
 
-    float heightDistance = 14f;
 
     void Awake()
     {
@@ -70,6 +69,7 @@ public class FunnieAltMovementScript : MonoBehaviour
                                                                                 this.gameObject.transform.parent.transform.position.z);
         }
 
+        //This checks if the player is squatting
         if (shoulderCenter.transform.position.y < 0.6f)
         {
             this.gameObject.transform.parent.transform.position = new Vector3(  this.gameObject.transform.parent.transform.position.x, 

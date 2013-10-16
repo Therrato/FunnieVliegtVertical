@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections;
 using Assets.Scripts;
+using System;
 
 public class InitScript : MonoBehaviour {
 
@@ -9,6 +10,16 @@ public class InitScript : MonoBehaviour {
     public int runtime;
     public SpawnWorldScript worldSpawner;
     public LogSystem log;
+
+    public bool madeResults = false;
+
+    public GameObject fullScreen;
+    public Texture2D waitScreen;
+    public Texture2D goodScreen;
+
+    public bool timerStarted = false;
+    public DateTime startcounttime;
+
 	// Use this for initialization
 	void Start () {
 		GatherBuildSettings();
@@ -28,16 +39,48 @@ public class InitScript : MonoBehaviour {
             if (NormalGoal.nextLevel())
             {
                 Debug.Log(NormalGoal.rounds + " roundsLeft");
-                Application.LoadLevel(1);
+                if (wait15Sec())
+                {
+                    Application.LoadLevel(1);
+                }
+                else
+                {
+                    fullScreen.guiTexture.texture = waitScreen;
+                    // display wait round screen
+                }
+
+                
             }
             else
             {
-                Debug.Log("0 rounds left game should end");
-                log = worldSpawner.log;
-                Result results = new Result(log);
-                Debug.Log(results.correctionCheck());
+                if (wait15Sec())
+                {
 
-                Application.LoadLevel(0);
+
+                    Debug.Log("0 rounds left game should end");
+                    log = worldSpawner.log;
+                    Result results = new Result(log);
+                    Debug.Log(results.correctionCheck());
+
+                    Application.LoadLevel(0);
+                }
+                else
+                {
+                    if (!madeResults)
+                    {
+
+                        Debug.Log("0 rounds left game should end");
+                        log = worldSpawner.log;
+                        Result results = new Result(log);
+                        Debug.Log(results.correctionCheck());
+                        madeResults = true;
+                    }
+                    else
+                    {
+                        fullScreen.guiTexture.texture = goodScreen;
+                        // goed gedaan screen
+                    }
+                }
             }
          
         }
@@ -51,5 +94,24 @@ public class InitScript : MonoBehaviour {
     public int getRound()
     {
         return 5 - NormalGoal.rounds;
+    }
+
+    public bool wait15Sec()
+    {
+        if (timerStarted == false)
+        {
+            startcounttime = DateTime.Now;
+            timerStarted = true;
+
+        }
+        else
+        {
+            if (DateTime.Now.Subtract(startcounttime).Seconds > 15)
+            {
+                return true;
+            }
+
+        }
+        return false;
     }
 }

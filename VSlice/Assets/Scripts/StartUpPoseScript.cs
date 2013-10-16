@@ -6,22 +6,21 @@ public class StartUpPoseScript : MonoBehaviour {
     public GameObject handLeft;
     public GameObject handRight;
     public GameObject shoulderCenter;
+    public GameObject countDownGO;
+    public Texture2D[] countDownNumbers;
     public Texture2D[] display;
     public bool positionTimerStarted = false;
     public bool isDebug = false;
     public DateTime startTime;
   
 
-
-
-
 	// Use this for initialization
 	void Start () {
         handLeft = GameObject.Find("Hand_Left");
         handRight = GameObject.Find("Hand_Right");
         shoulderCenter = GameObject.Find("Shoulder_Center");
+        countDownGO = GameObject.Find("CountDown");
         this.guiTexture.texture = display[0];
-
 	}
 	
 	// Update is called once per frame
@@ -51,17 +50,21 @@ public class StartUpPoseScript : MonoBehaviour {
             TimeSpan duration = DateTime.Now.Subtract(startTime);
             if (duration.Seconds == 0)
             {
+                countDownGO.guiTexture.texture = null;
                 Debug.Log ("3");
             }
             else if (duration.Seconds == 1){
+                countDownGO.guiTexture.texture = countDownNumbers[0];
                 Debug.Log("2");
             }
             else if (duration.Seconds == 2)
             {
+                countDownGO.guiTexture.texture = countDownNumbers[1];
                 Debug.Log("1");
             }
             else if (duration.Seconds >= 3)
             {
+                countDownGO.guiTexture.texture = countDownNumbers[2];
                 GameObject.Find("World").GetComponent<SpawnWorldScript>().deActivatePose();
 
                 Destroy(this.gameObject);
