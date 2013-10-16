@@ -110,6 +110,7 @@ public class FunnieMovementScript : MonoBehaviour {
 
     public void CollectsFeather()
     {
+        
         featherPickupTime = DateTime.Now;
         if (funniespeed + featherExtraSpeed >= funnieMaxSpeed + featherExtraSpeed)
         {
@@ -119,7 +120,7 @@ public class FunnieMovementScript : MonoBehaviour {
         {
             funniespeed += featherExtraSpeed;
         }
-
+        GameObject.Find("FeatherParticle").GetComponent<ParticleSystem>().Play();
         _hasFeather = true;
     }
 
@@ -129,6 +130,7 @@ public class FunnieMovementScript : MonoBehaviour {
         {
             funniespeed = funnieMaxSpeed;
         }
+        GameObject.Find("FeatherParticle").GetComponent<ParticleSystem>().Stop();
         _hasFeather = false;
     }
     /// <summary>
