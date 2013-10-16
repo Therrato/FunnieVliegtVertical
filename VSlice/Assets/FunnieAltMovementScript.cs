@@ -35,7 +35,7 @@ public class FunnieAltMovementScript : MonoBehaviour
         //this checks if the player stepped to the left
         if (shoulderCenter.transform.position.x > -2.0f && shoulderCenter.transform.position.x < -0.5f)
         {
-            this.gameObject.transform.parent.transform.position = new Vector3(10, this.gameObject.transform.parent.transform.position.y, this.gameObject.transform.parent.transform.position.z);
+            this.gameObject.transform.parent.transform.position = new Vector3(15, this.gameObject.transform.parent.transform.position.y, this.gameObject.transform.parent.transform.position.z);
             Debug.Log("Player is on the left!");
         }
 
@@ -49,13 +49,16 @@ public class FunnieAltMovementScript : MonoBehaviour
         //this check if the played stepped to the right
         if (shoulderCenter.transform.position.x > 0.5f && shoulderCenter.transform.position.x < 2.0f)
         {
-            this.gameObject.transform.parent.transform.position = new Vector3(-10, this.gameObject.transform.parent.transform.position.y, this.gameObject.transform.parent.transform.position.z);
+            this.gameObject.transform.parent.transform.position = new Vector3(-15, this.gameObject.transform.parent.transform.position.y, this.gameObject.transform.parent.transform.position.z);
             Debug.Log("Player is on the right!");
         }
+
+        Debug.Log("Hand right Y position: " + handRight.transform.position.y + ", Hand left Y position: " + handLeft.transform.position.y + ", Shoulder center Y position: " + shoulderCenter.transform.position.y);
 
         //this moves the player up
         if (handRight.transform.position.y > shoulderCenter.transform.position.y + 0.1f && handLeft.transform.position.y > shoulderCenter.transform.position.y + 0.1f)
         {
+           
             this.gameObject.transform.parent.transform.position = new Vector3(  this.gameObject.transform.parent.transform.position.x,
                                                                                 25.0f, 
                                                                                 this.gameObject.transform.parent.transform.position.z);
@@ -63,9 +66,15 @@ public class FunnieAltMovementScript : MonoBehaviour
         else
         {
             this.gameObject.transform.parent.transform.position = new Vector3(  this.gameObject.transform.parent.transform.position.x,
-                                                                                10.5f,
+                                                                                15.0f,
                                                                                 this.gameObject.transform.parent.transform.position.z);
         }
 
+        if (shoulderCenter.transform.position.y < 0.6f)
+        {
+            this.gameObject.transform.parent.transform.position = new Vector3(  this.gameObject.transform.parent.transform.position.x, 
+                                                                                5, 
+                                                                                this.gameObject.transform.parent.transform.position.z);
+        }
     }
 }
