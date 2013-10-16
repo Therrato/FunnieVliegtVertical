@@ -10,6 +10,7 @@ public class StartUpPoseScript : MonoBehaviour {
     public bool positionTimerStarted = false;
     public bool isDebug = false;
     public DateTime startTime;
+  
 
 
 

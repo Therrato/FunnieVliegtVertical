@@ -8,10 +8,14 @@ public class SpawnWorldScript : MonoBehaviour {
 	public GameObject[] spawnedTiles;
 
     public bool poseActive = true;
+    public LogSystem log;
+
     public bool goalReached;
     public bool endTileSpawned;
     public bool endTileReached;
     public GameObject endTile;
+
+
 
     public LevelSettings availableResources;
 
@@ -24,9 +28,11 @@ public class SpawnWorldScript : MonoBehaviour {
         availableResources = new LevelSettings(buildableResources.bananas,buildableResources.obstacles,buildableResources.monkeys,buildableResources.figures,new Goal());
 		//availableResources = new LevelSettings(true,true,true,true, new Goal());
         statHandler = GameObject.Find("InitHolder").GetComponent<InitScript>();
+    
     }
 
 	void Start () {
+       
 		for (int i =0; i<spawnedTiles.Length;i++){
 			//GameObject newTile =  (GameObject)Instantiate(tiles[Random.Range(0,tiles.Length)]);// start if multiple tiles
             GameObject newTile = (GameObject)Instantiate(tiles[0]);
@@ -41,6 +47,7 @@ public class SpawnWorldScript : MonoBehaviour {
             
 			tilesSpawned++;
 		}
+        
 	
 	}
     /// <summary>
@@ -50,7 +57,8 @@ public class SpawnWorldScript : MonoBehaviour {
     {
         poseActive = false;
         GameObject.Find("InitHolder").GetComponent<InitScript>().playerStats.setNewBeginTime();
-        
+        log = GameObject.Find("LogSys(Clone)").GetComponent<LogSystem>();
+        log.pushEvent("STARTROUND");
     }
 	
 	// Update is called once per frame
@@ -108,6 +116,7 @@ public class SpawnWorldScript : MonoBehaviour {
 
     public void gameEnded()
     {
+        log.pushEvent("ROUNDEND");
         endTileReached = true;
 
     }

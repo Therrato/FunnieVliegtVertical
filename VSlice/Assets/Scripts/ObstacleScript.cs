@@ -20,6 +20,7 @@ public class ObstacleScript : MonoBehaviour
     public int laneswide;
     public int lanesHigh;
     public int lanesDeep;
+    public string name;
     private LogSystem log;
 	
 	public FunnieMovementScript funnie;
@@ -77,11 +78,11 @@ public class ObstacleScript : MonoBehaviour
         if (!hit)
         {
             statHandler.playerStats.obstaclesPassed += 1;
-            log.pushEvent("PASSEDOBJECT");
+            log.pushEvent("PASSEDOBJECT"+name.ToUpper());
         }
         else
         {
-            log.pushEvent("HITOBJECT");
+            log.pushEvent("HITOBJECT"+name.ToUpper());
         }
 
     }

@@ -20,7 +20,14 @@ public class LogSystem : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
+        /*
+        int count = 0;
+        foreach (LogEvent a in loggedEvents)
+        {
+            count++;
+        }
+        Debug.Log(" ammont of logs" +count);
+	*/
 	}
 
     public void pushEvent(string logCode)

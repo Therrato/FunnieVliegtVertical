@@ -19,6 +19,7 @@ public class EndTileScript : MonoBehaviour {
         if (coll.name == "BIRD")
         {
             this.gameObject.transform.parent.transform.parent.GetComponent<SpawnWorldScript>().gameEnded();
+
             Debug.Log("EndReached");
         }
     }

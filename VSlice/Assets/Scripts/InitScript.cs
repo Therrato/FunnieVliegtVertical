@@ -8,6 +8,7 @@ public class InitScript : MonoBehaviour {
     public PlayerStats playerStats;
     public int runtime;
     public SpawnWorldScript worldSpawner;
+    public LogSystem log;
 	// Use this for initialization
 	void Start () {
 		GatherBuildSettings();
@@ -32,6 +33,11 @@ public class InitScript : MonoBehaviour {
             else
             {
                 Debug.Log("0 rounds left game should end");
+                log = worldSpawner.log;
+                Result results = new Result(log);
+                Debug.Log(results.correctionCheck());
+
+                Application.LoadLevel(0);
             }
          
         }
