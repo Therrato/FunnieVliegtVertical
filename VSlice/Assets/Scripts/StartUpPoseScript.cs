@@ -48,25 +48,25 @@ public class StartUpPoseScript : MonoBehaviour {
         if (positionTimerStarted)
         {
             TimeSpan duration = DateTime.Now.Subtract(startTime);
+            countDownGO.guiTexture.texture = null;
             if (duration.Seconds == 0)
             {
-                countDownGO.guiTexture.texture = null;
+                countDownGO.guiTexture.texture = countDownNumbers[0];
                 Debug.Log ("3");
             }
             else if (duration.Seconds == 1){
-                countDownGO.guiTexture.texture = countDownNumbers[0];
+                countDownGO.guiTexture.texture = countDownNumbers[1];
                 Debug.Log("2");
             }
             else if (duration.Seconds == 2)
             {
-                countDownGO.guiTexture.texture = countDownNumbers[1];
+                countDownGO.guiTexture.texture = countDownNumbers[2];
                 Debug.Log("1");
             }
             else if (duration.Seconds >= 3)
             {
-                countDownGO.guiTexture.texture = countDownNumbers[2];
+                countDownGO.guiTexture.texture = null;
                 GameObject.Find("World").GetComponent<SpawnWorldScript>().deActivatePose();
-
                 Destroy(this.gameObject);
             }
 
@@ -74,6 +74,7 @@ public class StartUpPoseScript : MonoBehaviour {
         }
         else
         {
+            //countDownGO.guiTexture.texture = null;
             positionTimerStarted = true;
             startTime = DateTime.Now;
         }
