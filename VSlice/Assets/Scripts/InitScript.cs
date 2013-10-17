@@ -45,6 +45,7 @@ public class InitScript : MonoBehaviour {
                 }
                 else
                 {
+                    NormalGoal.rounds++;
                     fullScreen.guiTexture.texture = waitScreen;
                     // display wait round screen
                 }
@@ -57,22 +58,24 @@ public class InitScript : MonoBehaviour {
                 {
 
 
-                    Debug.Log("0 rounds left game should end");
-                    log = worldSpawner.log;
-                    Result results = new Result(log);
-                    Debug.Log(results.correctionCheck());
-
+                 
                     Application.LoadLevel(0);
                 }
                 else
                 {
+                    NormalGoal.rounds++;
                     if (!madeResults)
                     {
-
+                        
                         Debug.Log("0 rounds left game should end");
                         log = worldSpawner.log;
                         Result results = new Result(log);
-                        Debug.Log(results.correctionCheck());
+                        int c = 0;
+                        foreach (RoundScore r in results.rounds)
+                        {
+                            Debug.Log(c + "banana pickupRatio : " + r.getPickupRatio() + " obstacle avoided Ratio : " + r.getObstacleAvoidedRatio());
+                            c++;
+                        }
                         madeResults = true;
                     }
                     else

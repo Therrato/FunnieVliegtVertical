@@ -39,7 +39,7 @@ public class ObjectScript : MonoBehaviour {
             {
                 other.transform.parent.GetComponent<FunnieMovementScript>().CollectsFeather();
                 statHandler.playerStats.feathersCollected += 1;
-                log.pushEvent("FEATHER");
+                log.pushEvent("FEATHERPICKUP");
                
               
             }
@@ -56,7 +56,7 @@ public class ObjectScript : MonoBehaviour {
 					Destroy(gameObject); 		
 				
                 statHandler.playerStats.bananas += 1;
-                log.pushEvent("BANANA");
+                log.pushEvent("BANANAPICKUP");
                 
             }
             Destroy(this.gameObject);
@@ -74,8 +74,15 @@ public class ObjectScript : MonoBehaviour {
             else
             {
                 // reset bananapitch here
+                resetPitch();
                 log.pushEvent("BANANAMISSED");
             }
         }
+    }
+
+    public void resetPitch()
+    {
+        Debug.Log("pitch is reset");
+        pitch = 1;
     }
 }

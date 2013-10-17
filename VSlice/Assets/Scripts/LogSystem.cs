@@ -32,7 +32,7 @@ public class LogSystem : MonoBehaviour {
 
     public void pushEvent(string logCode)
     {
-        Debug.Log(logCode);
+        Debug.Log(logCode+ gameInfo.getRound());
         loggedEvents.Add(new LogEvent(gameInfo.getRound(), logCode));
     }
 

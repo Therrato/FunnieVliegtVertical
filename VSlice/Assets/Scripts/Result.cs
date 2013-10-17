@@ -7,7 +7,8 @@ public class Result
     public float overAllObstacleHitRatio;
     public float overAllBananaRatio;
     public List<LogEvent> data= new List<LogEvent>();
-    public List<List<LogEvent>> rounds = new List<List<LogEvent>>();
+    public List<RoundScore> rounds = new List<RoundScore>();
+    
     
 
     /*
@@ -19,27 +20,35 @@ public class Result
     public Result(LogSystem LogOfGame)
     {
         data = LogOfGame.getLogList();
-        fillInTables();
+        calculateRoundScores();
+        
         
     }
 
-    public void fillInTables(){
-        // canot do this;
+    public void calculateRoundScores()
+    {
+        List<LogEvent> currentRound = new List<LogEvent>();
+        int lastRoundNumber = 0;
         foreach (LogEvent a in data)
         {
-            rounds[a.roundNumber].Add(a);
+            if (lastRoundNumber == a.roundNumber)
+            {
+                currentRound.Add(a);
+            }
+            if ( a.eventString == "ROUNDEND")
+            {
+                rounds.Add(new RoundScore(currentRound));
+                currentRound = new List<LogEvent>();
+                lastRoundNumber++;
+                currentRound.Add(a);
+            }
         }
-    }
 
-    public int correctionCheck()
-    {
-        int count = 0 ;
-        foreach (List<LogEvent> check in rounds)
-        {
-            count++;
-        }
-        return count;
-        
+
     }
+    
+
+
+    
 
 }
