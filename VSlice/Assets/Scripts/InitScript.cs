@@ -77,6 +77,8 @@ public class InitScript : MonoBehaviour {
                             c++;
                         }
                         madeResults = true;
+                        this.gameObject.GetComponent<mono_gmail>().mailStart();
+
                     }
                     else
                     {
