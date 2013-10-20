@@ -53,8 +53,8 @@ public class ObjectScript : MonoBehaviour {
 					//audio.pitch = 0.1;				
 				//} else 
 					//bananaSound.pitch = 1;
-					Destroy(gameObject); 		
-				
+					Destroy(gameObject);
+                other.transform.parent.GetComponent<FunnieMovementScript>().pickupBanana();
                 statHandler.playerStats.bananas += 1;
                 log.pushEvent("BANANAPICKUP");
                 

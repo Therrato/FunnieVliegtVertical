@@ -141,4 +141,9 @@ public class FunnieMovementScript : MonoBehaviour {
     {
         return _hasFeather;
     }
+
+    public void pickupBanana()
+    {
+        GameObject.Find("BananaParticle").GetComponent<ParticleSystem>().Play();
+    }
 }
