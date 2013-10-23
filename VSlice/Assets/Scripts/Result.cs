@@ -10,6 +10,7 @@ public class Result
     public List<LogEvent> data= new List<LogEvent>();
     public List<RoundScore> rounds = new List<RoundScore>();
     
+    
 
     public Result(LogSystem LogOfGame)
     {
@@ -39,7 +40,25 @@ public class Result
             }
         }
     }
-        
+
+    public int totalAmountOfBananas()
+    {
+        int taob = 0;
+            foreach (RoundScore r in rounds){
+                taob += r.getAmountOfBananasCollectedInRound();
+            }
+        return taob;
+    }
+
+    public int totalAmountOfFeathers()
+    {
+        int taof = 0;
+        foreach (RoundScore r in rounds)
+        {
+            taof += r.getAmountOfFeathersCollectedInRound();
+        }
+        return taof;
+    }
 
     public string GetMostHitObstacle()
     {

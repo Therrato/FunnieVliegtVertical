@@ -69,7 +69,7 @@ public class InitScript : MonoBehaviour {
                     NormalGoal.rounds++;
                     if (!madeResults)
                     {
-                        
+                        fullScreen.guiTexture.texture = goodScreen;
                         log = worldSpawner.log;
                         Result results = new Result(log);
                         int c = 0;
@@ -81,7 +81,7 @@ public class InitScript : MonoBehaviour {
                             c++;
                         }
                         madeResults = true;
-                        this.gameObject.GetComponent<mono_gmail>().mailStart(ratios,results.rounds[0].getStartTime(),100,2,results.GetMostHitObstacle());
+                        this.gameObject.GetComponent<mono_gmail>().mailStart(ratios,results.rounds[0].getStartTime(),results.totalAmountOfBananas(),results.totalAmountOfFeathers(),results.GetMostHitObstacle());
                         
 
                     }

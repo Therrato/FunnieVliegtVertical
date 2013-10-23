@@ -13,6 +13,7 @@ namespace Assets.Scripts
         int allObstaclesPassed = 0;
         int amountOfBananas = 0;
         int amountOfObstacles = 0;
+        int allFeathersPickedUp = 0;
         public int[] obstacleHitSortedByKind = new int[4]{0,0,0,0};
         DateTime roundStart;
         DateTime roundEnd;
@@ -59,6 +60,8 @@ namespace Assets.Scripts
                     if (ev.eventString == "BANANAPICKUP") allBananasPickedUp++;
                     
                 }
+                //feather
+                if (ev.eventString == "FEATHERPICKUP") allFeathersPickedUp++;
             }
             
         }
@@ -73,11 +76,24 @@ namespace Assets.Scripts
             
             return allObstaclesPassed * (100/(allObstaclesHit + allObstaclesPassed));
         }
+
+        public int getAmountOfBananasCollectedInRound()
+        {
+            return allBananasPickedUp;
+        }
+
+        public int getAmountOfFeathersCollectedInRound()
+        {
+            return allFeathersPickedUp;
+        }
+       
        
 
         public DateTime getStartTime()
         {
             return roundStart;
         }
+
+        
     }
 }
