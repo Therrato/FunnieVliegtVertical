@@ -17,6 +17,9 @@ namespace Assets.Scripts
         public int percentage2 = 0;
         public Texture2D tex;
 
+        public string emailbody = "";
+
+
         public int[] uitslag;
         public Color g;
         public Color b;
@@ -32,19 +35,14 @@ namespace Assets.Scripts
 
 
             var bytes = tex.EncodeToPNG();
-            //Destroy(tex);
             File.WriteAllBytes(Application.dataPath + "/Resources/Texture/Graphic emailSend.png", bytes);
-            //
-            //Application.CaptureScreenshot(Application.dataPath + "/scre/Screenshot.png");
-            //yieldfunction(10);
 
             MailMessage mail = new MailMessage();
 
             mail.From = new MailAddress("saxiontestmail@gmail.com");
             mail.To.Add("r.schroder@live.nl");
             mail.Subject = "Test Mail";
-            mail.Body = "Hello,\n" +
-                        "Here are the testresults of: " + System.DateTime.Now.ToString();
+            mail.Body = emailbody;
             Attachment att = new System.Net.Mail.Attachment(Application.dataPath + "/Resources/Texture/Graphic emailSend.png");
             //  Attachment att = new System.Net.Mail.Attachment();
             mail.Attachments.Add(att);
@@ -61,13 +59,25 @@ namespace Assets.Scripts
 
         }
 
-        public void mailStart()
+        public void mailStart(int[] ratios, DateTime startTime, int allbananas,int allfeathers, string mosthit)
         {
-            
-            createGraph(uitslag);
-            tex.Apply();
-            sendEmail();
-            Resources.UnloadAsset(tex);
+            if (ratios.Length > 4)
+            {
+                createGraph(ratios);
+                tex.Apply();
+                emailbody = "Tijdens een recente vlucht zijn deze volgende scores behaald. \r\n"+
+                            "Tevens hebben we de volgende gegevens uit kunnen lezen. \r\n"+
+                            "De vlucht begon om "+ startTime+" \r\n"+
+                            "Er zijn "+ ratios.Length/2 + " ronde(n) geweest.\r\n"+
+                            "Er zijn "+ allbananas+ " bananen opgepakt in het spel.\r\n"+
+                            "Er zijn "+ allfeathers+" veren opgepakt in het spel. \r\n"+
+                            "De speler had de meeste moeite met het object "+mosthit+ ". \r\n"+
+                            "in de bijlage kan u een grafiek zien waarop staat aangegeven in het groen hoeveel procent van de banananen er zijn opgepakt\r\n"+
+                            "en in het rood word aangegeven hoeveel procent van de objecten er zijn geraakt";
+
+                sendEmail();
+                Resources.UnloadAsset(tex);
+            }
         }
 
         public void createGraph(int[] u)
@@ -89,8 +99,9 @@ namespace Assets.Scripts
                 }
                 else
                 {
-                    createBar(37 + (20 * i) + extraOffset, 41, u[i], 20, b);
+                    createBar(37 + (20 * i)+extraOffset, 41, u[i], 20, b);
                 }
+                Debug.Log(i+ "this is the value"+u[i]);
             }
         }
 

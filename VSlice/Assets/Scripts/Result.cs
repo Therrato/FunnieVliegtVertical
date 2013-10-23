@@ -6,16 +6,10 @@ public class Result
 {
     public float overAllObstacleHitRatio;
     public float overAllBananaRatio;
+    public int amountOfRounds = 0;
     public List<LogEvent> data= new List<LogEvent>();
     public List<RoundScore> rounds = new List<RoundScore>();
     
-    
-
-    /*
-	public Result()
-	{
-
-	}*/ 
 
     public Result(LogSystem LogOfGame)
     {
@@ -40,15 +34,42 @@ public class Result
                 rounds.Add(new RoundScore(currentRound));
                 currentRound = new List<LogEvent>();
                 lastRoundNumber++;
+                amountOfRounds++;
                 currentRound.Add(a);
             }
         }
-
-
     }
-    
+        
 
+    public string GetMostHitObstacle()
+    {
+        int[] HitSortedByKind = new int[4]{0,0,0,0};
+            
 
-    
+        foreach ( RoundScore r in rounds){
+            HitSortedByKind[0]+=r.obstacleHitSortedByKind[0]; 
+            HitSortedByKind[1]+=r.obstacleHitSortedByKind[1]; 
+            HitSortedByKind[2]+=r.obstacleHitSortedByKind[2]; 
+            HitSortedByKind[3]+=r.obstacleHitSortedByKind[3]; 
+            }
 
-}
+        int MostHitted=0;
+        int val = 0;
+        for (int i = 0; i <HitSortedByKind.Length;i++){
+            if (val < HitSortedByKind[i])
+            {
+                val = HitSortedByKind[i];
+                MostHitted = i;
+            }
+        }
+
+        if (MostHitted == 0) return "de bamboo plant";
+        if (MostHitted == 1) return "het bananenblad";
+        if (MostHitted == 2) return "de steen";
+        if (MostHitted == 3) return "de liaan";
+
+        return "niets geraakt";
+        }
+            
+   }
+

@@ -35,6 +35,7 @@ public class ObjectScript : MonoBehaviour {
 	{
 		if(other.name == "BIRD")
 		{
+            pickedUp = true;
             if (isFeather)
             {
                 other.transform.parent.GetComponent<FunnieMovementScript>().CollectsFeather();
@@ -48,12 +49,7 @@ public class ObjectScript : MonoBehaviour {
                 audio.pitch = pitch;
                 AudioSource.PlayClipAtPoint(bananaSound, transform.position);
                 pitch += 0.05f;
-                Debug.Log("Audio Pitch: "+audio.pitch + ", variable pitch: " + pitch);
-				//if(audio.pitch == 1.0) {
-					//audio.pitch = 0.1;				
-				//} else 
-					//bananaSound.pitch = 1;
-					Destroy(gameObject);
+				Destroy(gameObject);
                 other.transform.parent.GetComponent<FunnieMovementScript>().pickupBanana();
                 statHandler.playerStats.bananas += 1;
                 log.pushEvent("BANANAPICKUP");
@@ -73,7 +69,7 @@ public class ObjectScript : MonoBehaviour {
             }
             else
             {
-                // reset bananapitch here
+               
                 resetPitch();
                 log.pushEvent("BANANAMISSED");
             }
@@ -82,7 +78,7 @@ public class ObjectScript : MonoBehaviour {
 
     public void resetPitch()
     {
-        Debug.Log("pitch is reset");
+       
         pitch = 1;
     }
 }

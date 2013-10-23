@@ -52,16 +52,16 @@ public class StartUpPoseScript : MonoBehaviour {
             if (duration.Seconds == 0)
             {
                 countDownGO.guiTexture.texture = countDownNumbers[0];
-                Debug.Log ("3");
+                
             }
             else if (duration.Seconds == 1){
                 countDownGO.guiTexture.texture = countDownNumbers[1];
-                Debug.Log("2");
+                
             }
             else if (duration.Seconds == 2)
             {
                 countDownGO.guiTexture.texture = countDownNumbers[2];
-                Debug.Log("1");
+                
             }
             else if (duration.Seconds >= 3)
             {

@@ -22,6 +22,7 @@ public class InitScript : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+        
 		GatherBuildSettings();
         worldSpawner = GameObject.Find("World").GetComponent<SpawnWorldScript>();
         if (GameObject.Find("LogSys(Clone)") == null)
@@ -38,10 +39,10 @@ public class InitScript : MonoBehaviour {
         {
             if (NormalGoal.nextLevel())
             {
-                Debug.Log(NormalGoal.rounds + " roundsLeft");
                 if (wait15Sec())
                 {
                     Application.LoadLevel(1);
+
                 }
                 else
                 {
@@ -58,7 +59,9 @@ public class InitScript : MonoBehaviour {
                 {
 
 
-                 
+                    Destroy(GameObject.Find("KinectPrefab"));
+                    Destroy(GameObject.Find("KinectPointMan"));
+                    Destroy(GameObject.Find("GameSettings"));
                     Application.LoadLevel(0);
                 }
                 else
@@ -67,17 +70,19 @@ public class InitScript : MonoBehaviour {
                     if (!madeResults)
                     {
                         
-                        Debug.Log("0 rounds left game should end");
                         log = worldSpawner.log;
                         Result results = new Result(log);
                         int c = 0;
+                        int[] ratios = new int[results.amountOfRounds*2];
                         foreach (RoundScore r in results.rounds)
                         {
-                            Debug.Log(c + "banana pickupRatio : " + r.getPickupRatio() + " obstacle avoided Ratio : " + r.getObstacleAvoidedRatio());
+                            ratios[(c * 2)] = r.getPickupRatio();
+                            ratios[(c * 2) + 1] = r.getObstacleAvoidedRatio();
                             c++;
                         }
                         madeResults = true;
-                        this.gameObject.GetComponent<mono_gmail>().mailStart();
+                        this.gameObject.GetComponent<mono_gmail>().mailStart(ratios,results.rounds[0].getStartTime(),100,2,results.GetMostHitObstacle());
+                        
 
                     }
                     else

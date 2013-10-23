@@ -128,7 +128,7 @@ public class ItemSpawner : MonoBehaviour {
                 }
 
             }
-            if (type ==3) // spawn full width
+           if (type ==100) // spawn full width
             {
               //  Debug.Log("Try To Spawn full width");
                 GameObject toPlaceObstacle = Instantiate(fullWidthBotLane[Random.Range(0, fullWidthBotLane.Length)]) as GameObject;

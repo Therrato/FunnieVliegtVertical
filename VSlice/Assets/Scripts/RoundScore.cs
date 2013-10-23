@@ -11,6 +11,9 @@ namespace Assets.Scripts
         int allBananasMissed = 0;
         int allObstaclesHit = 0;
         int allObstaclesPassed = 0;
+        int amountOfBananas = 0;
+        int amountOfObstacles = 0;
+        public int[] obstacleHitSortedByKind = new int[4]{0,0,0,0};
         DateTime roundStart;
         DateTime roundEnd;
 
@@ -25,7 +28,8 @@ namespace Assets.Scripts
             {
                 if (ev.eventString == "STARTROUND") roundStart = ev.logTime;
                 else if (ev.eventString == "ROUNDEND") roundEnd = ev.logTime;
-                else if (ev.eventString.Contains("HITOBJECT")){
+                
+                if (ev.eventString.Contains("HITOBJECT")){
                     allObstaclesHit++;
 
                 }
@@ -33,28 +37,47 @@ namespace Assets.Scripts
                 {
                     allObstaclesPassed++;
                 }
-                else if (ev.eventString.Contains("MISSED")){
-                    if (ev.eventString == "BANANAMISSED") allBananasMissed++;
-                    
-                }
-                else if (ev.eventString.Contains("PICKUP"))
+                if (ev.eventString.Contains("OBJECT"))
                 {
-                    if (ev.eventString == "BANANAPICKUP") allBananasPickedUp++;
+                    amountOfObstacles++;
+                    if (ev.eventString.Contains("PASSEDOBJECT")) allObstaclesPassed++;
+                    if (ev.eventString.Contains("HITOBJECT"))
+                    {
+                        allObstaclesHit++;
+                        if (ev.eventString.Contains("BAMBOO")) obstacleHitSortedByKind[0]++;
+                        if (ev.eventString.Contains("LEAF")) obstacleHitSortedByKind[1]++;
+                        if (ev.eventString.Contains("ROCK")) obstacleHitSortedByKind[2]++;
+                        if (ev.eventString.Contains("VINE")) obstacleHitSortedByKind[3]++;
+                    }
 
+                }
+
+
+                if (ev.eventString.Contains("BANANA")){
+                    amountOfBananas++;
+                    if (ev.eventString == "BANANAMISSED") allBananasMissed++;
+                    if (ev.eventString == "BANANAPICKUP") allBananasPickedUp++;
+                    
                 }
             }
             
         }
 
-        public float getPickupRatio()
+        public int getPickupRatio()
         {
-            return 100.0f;
-            //return allBananasPickedUp / (allBananasMissed + allBananasPickedUp / 100);
+            
+            return allBananasPickedUp * (100/amountOfBananas);
         }
-        public float getObstacleAvoidedRatio()
+        public int getObstacleAvoidedRatio()
         {
-            return 132.0f;
-            //return allObstaclesPassed / (allObstaclesHit + allObstaclesPassed / 100);
+            
+            return allObstaclesPassed * (100/(allObstaclesHit + allObstaclesPassed));
+        }
+       
+
+        public DateTime getStartTime()
+        {
+            return roundStart;
         }
     }
 }
