@@ -16,6 +16,7 @@ namespace Assets.Scripts
         public int percentage1 = 0;
         public int percentage2 = 0;
         public Texture2D tex;
+        public GameSettingsScript settings;
 
         public string emailbody = "";
 
@@ -28,34 +29,36 @@ namespace Assets.Scripts
 
         void Main()
         {
-
+            settings = GameObject.Find("GameSettings").GetComponent<GameSettingsScript>();
         }
         public void sendEmail()
         {
 
+            if (settings.sendEmail)
+            {
+                var bytes = tex.EncodeToPNG();
+                File.WriteAllBytes(Application.dataPath + "/Resources/Texture/Graphic emailSend.png", bytes);
 
-            var bytes = tex.EncodeToPNG();
-            File.WriteAllBytes(Application.dataPath + "/Resources/Texture/Graphic emailSend.png", bytes);
+                MailMessage mail = new MailMessage();
 
-            MailMessage mail = new MailMessage();
+                mail.From = new MailAddress("saxiontestmail@gmail.com");
+                mail.To.Add("" + settings.emailAddress);
+                mail.Subject = "Test Mail";
+                mail.Body = emailbody;
+                Attachment att = new System.Net.Mail.Attachment(Application.dataPath + "/Resources/Texture/Graphic emailSend.png");
+                //  Attachment att = new System.Net.Mail.Attachment();
+                mail.Attachments.Add(att);
 
-            mail.From = new MailAddress("saxiontestmail@gmail.com");
-            mail.To.Add("r.schroder@live.nl");
-            mail.Subject = "Test Mail";
-            mail.Body = emailbody;
-            Attachment att = new System.Net.Mail.Attachment(Application.dataPath + "/Resources/Texture/Graphic emailSend.png");
-            //  Attachment att = new System.Net.Mail.Attachment();
-            mail.Attachments.Add(att);
-
-            SmtpClient smtpServer = new SmtpClient("smtp.gmail.com");
-            smtpServer.Port = 587;
-            smtpServer.Credentials = new System.Net.NetworkCredential("saxiontestmail@gmail.com", "projectcommercialbreak") as ICredentialsByHost;
-            smtpServer.EnableSsl = true;
-            ServicePointManager.ServerCertificateValidationCallback =
-                delegate(object s, X509Certificate certificate, X509Chain chain, SslPolicyErrors sslPolicyErrors)
-                { return true; };
-            smtpServer.Send(mail);
-            Debug.Log("success");
+                SmtpClient smtpServer = new SmtpClient("smtp.gmail.com");
+                smtpServer.Port = 587;
+                smtpServer.Credentials = new System.Net.NetworkCredential("saxiontestmail@gmail.com", "projectcommercialbreak") as ICredentialsByHost;
+                smtpServer.EnableSsl = true;
+                ServicePointManager.ServerCertificateValidationCallback =
+                    delegate(object s, X509Certificate certificate, X509Chain chain, SslPolicyErrors sslPolicyErrors)
+                    { return true; };
+                smtpServer.Send(mail);
+                Debug.Log("success");
+            }
 
         }
 

@@ -161,6 +161,8 @@ public class MenuHandler : MonoBehaviour
     void startGame()
     {
         // set goal mode  1 round
+        gameSettings.onDepth = false;
+        gameSettings.onSettingsDepth = false;
         gameSettings.createNewGoal();
         gameSettings.instantiateNewLevelSettings();
         Debug.Log("Load Goal mode");
@@ -184,35 +186,41 @@ public class MenuHandler : MonoBehaviour
         {
             case 0:
 
-               this.transform.position = new Vector3(0, 0, 0);
-               backgroundHolder.guiTexture.texture = startScreen;
-
+                this.transform.position = new Vector3(0, 0, 0);
+                backgroundHolder.guiTexture.texture = startScreen;
+                gameSettings.onDepth = false;
+                gameSettings.onSettingsDepth = false;
                 break;
             case 1:
 
                 this.transform.position = new Vector3(100, 0, 0);
                 backgroundHolder.guiTexture.texture = gamemodeScreen;
-
+                gameSettings.onDepth = false;
+                gameSettings.onSettingsDepth = false;
                 break;
 
             case 2:
 
                 this.transform.position = new Vector3(200, 0, 0);
                 backgroundHolder.guiTexture.texture = choiceScreen;
+                gameSettings.onDepth = true;
+                gameSettings.onSettingsDepth = false;
 
                 break;
             case 3:
 
                 this.transform.position = new Vector3(0, 100, 0);
                 backgroundHolder.guiTexture.texture = creditScreen;
-
+                gameSettings.onDepth = false;
+                gameSettings.onSettingsDepth = false;
                 break;
 
             case 4:
 
                 this.transform.position = new Vector3(0, 200, 0);
                 backgroundHolder.guiTexture.texture = helpScreen;
-
+                gameSettings.onDepth = false;
+                gameSettings.onSettingsDepth = true;
                 break;
         }
     }

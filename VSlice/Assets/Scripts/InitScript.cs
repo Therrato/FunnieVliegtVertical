@@ -20,11 +20,29 @@ public class InitScript : MonoBehaviour {
     public bool timerStarted = false;
     public DateTime startcounttime;
 
+    public FunnieMovementScript funnieArmController;
+    public FunnieAltMovementScript funnieBodyController;
+
+    public GameSettingsScript settings;
+
 	// Use this for initialization
 	void Start () {
         
 		GatherBuildSettings();
         worldSpawner = GameObject.Find("World").GetComponent<SpawnWorldScript>();
+        funnieArmController = GameObject.Find("ParrotContainer").GetComponent<FunnieMovementScript>();
+        funnieBodyController = GameObject.Find("ParrotContainer").GetComponent<FunnieAltMovementScript>();
+        settings = GameObject.Find("GameSettings").GetComponent<GameSettingsScript>();
+        if (settings.controllerChoice == 1)
+        {
+            funnieBodyController.enabled = true;
+            funnieArmController.enabled = false;
+        }
+        else
+        {
+            funnieBodyController.enabled = false;
+            funnieArmController.enabled = true;
+        }
         if (GameObject.Find("LogSys(Clone)") == null)
         {
            GameObject log = Instantiate(Resources.Load("LogSys")) as GameObject;
