@@ -25,6 +25,7 @@ public class GameSettingsScript : MonoBehaviour
 
     public bool sendEmail = true;
     public string emailAddress = "jeroen.van.dragt@gmail.com";
+    private string mail;
 
     public bool onDepth = false;
     public bool onSettingsDepth = false;
@@ -42,6 +43,9 @@ public class GameSettingsScript : MonoBehaviour
     public Vector3 settingsPos1;
     public Vector3 settingsPos2;
     public Vector3 settingsPos3;
+    public Vector3 settingsPos4;
+
+    public GUISkin customSkin;
 
 
 	
@@ -80,18 +84,26 @@ public class GameSettingsScript : MonoBehaviour
         timeGoal = Mathf.Clamp(timeGoal, 0, 300);
         feathersGoal = Mathf.Clamp(feathersGoal, 0, 50);
         bannanasGoal = Mathf.Clamp(bannanasGoal, 0, 50);
+
+
+        if (sendEmail)
+        {
+            mail = "Ja";
+        }
+        else
+        {
+            mail = "Nee";
+        }
+
         
-
-
-
-        //Get Position of the Object
         if (onDepth)
         {
+            //Get Position of the Object
             screenPos1 = camera.WorldToScreenPoint(goals[0].position);
             screenPos2 = camera.WorldToScreenPoint(goals[1].position);
             screenPos3 = camera.WorldToScreenPoint(goals[2].position);
 
-            //Get inverse of y-position     
+                
             screenPos1.y = Screen.height - (screenPos1.y + 1);
             screenPos2.y = Screen.height - (screenPos2.y + 1);
             screenPos3.y = Screen.height - (screenPos3.y + 1);
@@ -99,13 +111,16 @@ public class GameSettingsScript : MonoBehaviour
 
         if (onSettingsDepth)
         {
+            //Get Position of the Object
             settingsPos1 = camera.WorldToScreenPoint(settings[0].position);
             settingsPos2 = camera.WorldToScreenPoint(settings[1].position);
-            
-
+            settingsPos3 = camera.WorldToScreenPoint(settings[2].position);
+            settingsPos4 = camera.WorldToScreenPoint(settings[3].position);
+            //Get inverse of y-position 
             settingsPos1.y = Screen.height - (settingsPos1.y + 1);
             settingsPos2.y = Screen.height - (settingsPos2.y + 1);
-
+            settingsPos3.y = Screen.height - (settingsPos3.y + 1);
+            settingsPos4.y = Screen.height - (settingsPos4.y + 1);
         }
 
         if (Application.loadedLevel == 0)
@@ -121,6 +136,7 @@ public class GameSettingsScript : MonoBehaviour
 
     public void OnGUI()
     {
+        GUI.skin = customSkin;
         if (onDepth)
         {
 
@@ -129,17 +145,18 @@ public class GameSettingsScript : MonoBehaviour
             Vector3 screenPos3 = camera.WorldToScreenPoint(goals[2].position);*/
 
             GUI.depth = 0;
-            GUI.Label(new Rect(Screen.width / 2, screenPos1.y, 200, 200),"" +  bannanasGoal);
-            GUI.Label(new Rect(Screen.width / 2, screenPos2.y, 200, 200), "" + feathersGoal);
-            GUI.Label(new Rect(Screen.width / 2, screenPos3.y, 200, 200), "" + timeGoal);
+            GUI.Label(new Rect(Screen.width / 2, screenPos1.y - 25, 200, 200),"" +  bannanasGoal);
+            GUI.Label(new Rect(Screen.width / 2, screenPos2.y - 25, 200, 200), "" + feathersGoal);
+            GUI.Label(new Rect(Screen.width / 2, screenPos3.y - 25, 200, 200), "" + timeGoal);
         }
 
         if (onSettingsDepth)
         {
             GUI.depth = 0;
-            emailAddress = GUI.TextField(new Rect((Screen.width / 2)-100, Screen.height - 50, 200, 50), emailAddress);
-            GUI.Label(new Rect(Screen.width / 2, settingsPos1.y, 200, 200), "" + settingsDifficulty);
-            GUI.Label(new Rect(Screen.width / 2, settingsPos2.y, 200, 200), "" + controllerChoice);
+            emailAddress = GUI.TextField(new Rect(settingsPos4.x, settingsPos4.y, 400, 75), emailAddress);
+            GUI.Label(new Rect(settingsPos1.x, settingsPos1.y, 200, 200), "" + (controllerChoice + 1));
+            GUI.Label(new Rect(settingsPos2.x, settingsPos2.y, 200, 200), "" + settingsDifficulty);
+            GUI.Label(new Rect(settingsPos3.x, settingsPos3.y, 200, 200), "" + mail);
         }
 
     }
