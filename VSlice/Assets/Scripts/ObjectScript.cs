@@ -17,6 +17,7 @@ public class ObjectScript : MonoBehaviour {
 	
 	void Awake()
 	{
+        this.gameObject.transform.eulerAngles = new Vector3(this.gameObject.transform.eulerAngles.x,Random.Range(0,359), this.gameObject.transform.eulerAngles.z);
 		statHandler = GameObject.Find ("InitHolder").GetComponent<InitScript>();
         
 	}

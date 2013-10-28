@@ -98,11 +98,11 @@ namespace Assets.Scripts
                 count++;
                 if (i % 2 == 0)
                 {
-                    createBar(37 + (20 * i)+extraOffset, 41, u[i], 20, g);
+                    createBar(37 + (20 * i)+extraOffset, 42, u[i], 20, g);
                 }
                 else
                 {
-                    createBar(37 + (20 * i)+extraOffset, 41, u[i], 20, b);
+                    createBar(37 + (20 * i)+extraOffset, 42, u[i], 20, b);
                 }
                 Debug.Log(i+ "this is the value"+u[i]);
             }
