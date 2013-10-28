@@ -12,6 +12,7 @@ namespace Assets.Scripts
         #region privates
 
         private int _bananas = 0;
+        private int _bananasMissed = 0;
         private int _obstaclesPassed = 0;
         private int _obstaclesHit = 0;
         private int _feathersCollected = 0;
@@ -57,6 +58,11 @@ namespace Assets.Scripts
         {
             get { return _bananas; }
             set { _bananas = value; }
+        }
+        public int bananasMissed
+        {
+            get { return _bananasMissed; }
+            set { _bananasMissed = value; }
         }
 
 

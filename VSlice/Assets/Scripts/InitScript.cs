@@ -17,6 +17,10 @@ public class InitScript : MonoBehaviour {
     public Texture2D waitScreen;
     public Texture2D goodScreen;
 
+    public int displayNumber = 0;
+    public Texture2D[] BetweenScreens;
+    public Texture2D[] EndScreens;
+
     public bool timerStarted = false;
     public DateTime startcounttime;
 
@@ -64,8 +68,14 @@ public class InitScript : MonoBehaviour {
                 }
                 else
                 {
+                    if (playerStats.roundBananaRatio() >= 0) displayNumber = 0;
+                    if (playerStats.roundBananaRatio() > 10) displayNumber = 1;
+                    if (playerStats.roundBananaRatio() > 20) displayNumber = 2;
+                    if (playerStats.roundBananaRatio() > 30) displayNumber = 3;
+                    if (playerStats.roundBananaRatio() > 40) displayNumber = 4;
+
                     NormalGoal.rounds++;
-                    fullScreen.guiTexture.texture = waitScreen;
+                    fullScreen.guiTexture.texture = BetweenScreens[displayNumber]; 
                     // display wait round screen
                 }
 
@@ -76,9 +86,8 @@ public class InitScript : MonoBehaviour {
                 if (wait15Sec())
                 {
 
-
-                    Destroy(GameObject.Find("KinectPrefab"));
                     Destroy(GameObject.Find("KinectPointMan"));
+                    Destroy(GameObject.Find("KinectPrefab"));
                     Destroy(GameObject.Find("GameSettings"));
                     Application.LoadLevel(0);
                 }
@@ -100,12 +109,18 @@ public class InitScript : MonoBehaviour {
                         }
                         madeResults = true;
                         this.gameObject.GetComponent<mono_gmail>().mailStart(ratios,results.rounds[0].getStartTime(),results.totalAmountOfBananas(),results.totalAmountOfFeathers(),results.GetMostHitObstacle());
-                        
+                       
 
                     }
                     else
                     {
-                        fullScreen.guiTexture.texture = goodScreen;
+                        if (playerStats.roundBananaRatio() >= 0) displayNumber = 0;
+                        if (playerStats.roundBananaRatio() > 10) displayNumber = 1;
+                        if (playerStats.roundBananaRatio() > 20) displayNumber = 2;
+                        if (playerStats.roundBananaRatio() > 30) displayNumber = 3;
+                        if (playerStats.roundBananaRatio() > 40) displayNumber = 4;
+                        
+                        fullScreen.guiTexture.texture = EndScreens[displayNumber];
                         // goed gedaan screen
                     }
                 }
@@ -134,7 +149,7 @@ public class InitScript : MonoBehaviour {
         }
         else
         {
-            if (DateTime.Now.Subtract(startcounttime).Seconds > 15)
+            if (DateTime.Now.Subtract(startcounttime).Seconds > 10)
             {
                 return true;
             }

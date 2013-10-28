@@ -24,5 +24,11 @@ namespace Assets.Scripts
         {
             beginTime = DateTime.Now;
         }
+
+        public int roundBananaRatio()
+        {
+            return this.bananas*(100/(this.bananas+this.bananasMissed));
+           
+        }
     }
 }

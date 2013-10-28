@@ -49,6 +49,21 @@ public class Result
             }
         return taob;
     }
+    public int totalAmountOfBananasMissed()
+    {
+        int taobm = 0;
+        foreach (RoundScore r in rounds)
+        {
+            taobm += r.getAmountOfBananasMissedInRound();
+        }
+        return taobm;
+    }
+
+    public int overAllRatio()
+    {
+        
+              return totalAmountOfBananas() * (100/(totalAmountOfBananas()+totalAmountOfBananasMissed()));
+    }
 
     public int totalAmountOfFeathers()
     {

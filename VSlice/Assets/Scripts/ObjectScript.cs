@@ -72,6 +72,7 @@ public class ObjectScript : MonoBehaviour {
             {
                
                 resetPitch();
+                statHandler.playerStats.bananasMissed += 1;
                 log.pushEvent("BANANAMISSED");
             }
         }

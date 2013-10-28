@@ -81,6 +81,10 @@ namespace Assets.Scripts
         {
             return allBananasPickedUp;
         }
+        public int getAmountOfBananasMissedInRound()
+        {
+            return allBananasMissed;
+        }
 
         public int getAmountOfFeathersCollectedInRound()
         {
