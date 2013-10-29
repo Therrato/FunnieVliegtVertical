@@ -9,6 +9,13 @@ public class FunnieAltMovementScript : MonoBehaviour
     public GameObject handRight;
     public GameObject shoulderCenter;
 
+    private float funniespeed = 35;
+    private float funnieMaxSpeed = 40;
+    private bool _hasFeather = false;
+    private float featherExtraSpeed = 15;
+    private float featherDuration = 2;
+    private DateTime featherPickupTime;
+
 
     void Awake()
     {
@@ -24,7 +31,13 @@ public class FunnieAltMovementScript : MonoBehaviour
 	
 	void Update () 
     {
-        checkPosition();
+        if (!GameObject.Find("World").GetComponent<SpawnWorldScript>().poseActive)
+        {
+            if (_hasFeather) checkFeatherDuration();
+            increaseSpeed();
+            checkPosition();
+
+        }
         //Debug.Log(  "shoulderCenter X position: " + shoulderCenter.transform.position.x);
 	}
 
@@ -76,5 +89,69 @@ public class FunnieAltMovementScript : MonoBehaviour
                                                                                 5, 
                                                                                 this.gameObject.transform.parent.transform.position.z);
         }
+    }
+
+    private void checkFeatherDuration()
+    {
+
+        TimeSpan runtime = DateTime.Now.Subtract(featherPickupTime);
+        if (runtime.Seconds > featherDuration) featherStoppedWorking();
+    }
+
+    public float getFunnieSpeed()
+    {
+        return funniespeed;
+    }
+
+    public void setFunnieSpeed()
+    {
+        funniespeed = 35;
+    }
+
+    public void increaseSpeed()
+    {
+        if (funnieMaxSpeed > funniespeed)
+        {
+            funniespeed += 0.5f * Time.deltaTime;
+        }
+    }
+
+    public void CollectsFeather()
+    {
+
+        featherPickupTime = DateTime.Now;
+        if (funniespeed + featherExtraSpeed >= funnieMaxSpeed + featherExtraSpeed)
+        {
+            funniespeed = funnieMaxSpeed + featherExtraSpeed;
+        }
+        else
+        {
+            funniespeed += featherExtraSpeed;
+        }
+        GameObject.Find("FeatherParticle").GetComponent<ParticleSystem>().Play();
+        _hasFeather = true;
+    }
+
+    public void featherStoppedWorking()
+    {
+        if (funniespeed > funnieMaxSpeed)
+        {
+            funniespeed = funnieMaxSpeed;
+        }
+        GameObject.Find("FeatherParticle").GetComponent<ParticleSystem>().Stop();
+        _hasFeather = false;
+    }
+    /// <summary>
+    /// has the player optained a feather?
+    /// </summary>
+    /// <returns>true or false</returns>
+    public bool hasFeather()
+    {
+        return _hasFeather;
+    }
+
+    public void pickupBanana()
+    {
+        GameObject.Find("BananaParticle").GetComponent<ParticleSystem>().Play();
     }
 }

@@ -11,6 +11,7 @@ public class MenuHandler : MonoBehaviour
     public int helpCounter = 0;
     public int creditsCounter = 0;
     public int exitCounter = 0;
+    public int tutorialCounter = 0;
 
     public int saveSettings = 0;
 
@@ -69,6 +70,11 @@ public class MenuHandler : MonoBehaviour
             helpCounter = 0;
         }
 
+        if (tutorialCounter > 100)
+        {
+            Application.LoadLevel(2);
+        }
+
         if (exitCounter > 100)
         {
             Application.Quit();
@@ -111,6 +117,7 @@ public class MenuHandler : MonoBehaviour
             creditsCounter <= 25 &&
             exitCounter <= 25 &&
             backCounter <= 25 &&
+            tutorialCounter <= 25 &&
             saveSettings <= 25)
         {
             cursor.aTexture = cursor.emptyCursor;
@@ -125,6 +132,7 @@ public class MenuHandler : MonoBehaviour
             creditsCounter <= 50 &&
             exitCounter <= 50 &&
             backCounter <= 50 &&
+            tutorialCounter <= 50 &&
             saveSettings <= 50)
         {
             cursor.aTexture = cursor.phase1Cursor;
@@ -137,6 +145,7 @@ public class MenuHandler : MonoBehaviour
             creditsCounter <= 75 &&
             exitCounter <= 75 &&
             backCounter <= 75 &&
+            tutorialCounter <= 75 &&
             saveSettings <= 75)
         {
             cursor.aTexture = cursor.phase2Cursor;
@@ -149,6 +158,7 @@ public class MenuHandler : MonoBehaviour
             creditsCounter <= 100 &&
             exitCounter <= 100 &&
             backCounter <= 100 &&
+            tutorialCounter <= 100 &&
             saveSettings <= 100)
         {
             cursor.aTexture = cursor.phase3Cursor;
