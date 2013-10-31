@@ -19,9 +19,15 @@ public class GameSettingsScript : MonoBehaviour
     public int timeGoal;
     public int feathersGoal;
 
+    private string bananaText = "10";
+    private string feathersText = "5";
+    private string timeText = "45";
+
     public int controllerChoice = 0;
+    private string controllerText = "1";
 
     public int settingsDifficulty = 0;
+    private string settingsText = "1";
 
     public bool sendEmail = true;
     public string emailAddress = "jeroen.van.dragt@gmail.com";
@@ -78,6 +84,14 @@ public class GameSettingsScript : MonoBehaviour
 
     void Update()
     {
+        int.TryParse(settingsText, out settingsDifficulty);
+        int.TryParse(controllerText, out controllerChoice);
+        int.TryParse(bananaText, out bannanasGoal);
+        int.TryParse(feathersText, out feathersGoal);
+        int.TryParse(timeText, out timeGoal);
+
+        //settingsDifficulty = int.Parse("" + settingsText) - 1;
+        //controllerChoice = int.Parse("" + controllerText) - 1;
         
         settingsDifficulty = Mathf.Clamp(settingsDifficulty, 0, 2);
         controllerChoice = Mathf.Clamp(controllerChoice, 0, 1);
@@ -145,18 +159,22 @@ public class GameSettingsScript : MonoBehaviour
             Vector3 screenPos3 = camera.WorldToScreenPoint(goals[2].position);*/
 
             GUI.depth = 0;
-            GUI.Label(new Rect(Screen.width / 2, screenPos1.y - 25, 200, 200),"" +  bannanasGoal);
-            GUI.Label(new Rect(Screen.width / 2, screenPos2.y - 25, 200, 200), "" + feathersGoal);
-            GUI.Label(new Rect(Screen.width / 2, screenPos3.y - 25, 200, 200), "" + timeGoal);
+            bananaText = GUI.TextField(new Rect((Screen.width / 2)-32.5f, screenPos1.y - 25, 75, 75), bananaText);
+            feathersText = GUI.TextField(new Rect((Screen.width / 2) - 32.5f, screenPos2.y - 25, 75, 75), feathersText);
+            timeText = GUI.TextField(new Rect((Screen.width / 2) - 32.5f, screenPos3.y - 25, 75, 75), timeText);
         }
 
         if (onSettingsDepth)
         {
             GUI.depth = 0;
             emailAddress = GUI.TextField(new Rect(settingsPos4.x, settingsPos4.y, 400, 75), emailAddress);
-            GUI.Label(new Rect(settingsPos1.x, settingsPos1.y, 200, 200), "" + (controllerChoice + 1));
-            GUI.Label(new Rect(settingsPos2.x, settingsPos2.y, 200, 200), "" + settingsDifficulty);
-            GUI.Label(new Rect(settingsPos3.x, settingsPos3.y, 200, 200), "" + mail);
+            controllerText = GUI.TextField(new Rect(settingsPos1.x, settingsPos1.y, 75, 75), controllerText);
+            settingsText = GUI.TextField(new Rect(settingsPos2.x, settingsPos2.y, 75, 75), settingsText);
+          //  GUI.Label(new Rect(settingsPos3.x, settingsPos3.y, 200, 200), "" + mail);
+            if(GUI.Button(new Rect(settingsPos3.x, settingsPos3.y, 165, 100), "" + mail))
+            {
+                sendEmail = !sendEmail;
+            }
         }
 
     }

@@ -6,6 +6,7 @@ public class MenuGoalStart : MonoBehaviour
 
     private MenuHandler menu;
 
+
 	// Use this for initialization
 	void Start () 
     {

@@ -173,6 +173,8 @@ public class MenuHandler : MonoBehaviour
         // set goal mode  1 round
         gameSettings.onDepth = false;
         gameSettings.onSettingsDepth = false;
+        gameSettings.controllerChoice -= 1;
+        gameSettings.settingsDifficulty -= 1;
         gameSettings.createNewGoal();
         gameSettings.instantiateNewLevelSettings();
         Debug.Log("Load Goal mode");
