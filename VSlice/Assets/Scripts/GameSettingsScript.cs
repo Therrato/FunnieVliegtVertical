@@ -24,9 +24,11 @@ public class GameSettingsScript : MonoBehaviour
     private string timeText = "45";
 
     public int controllerChoice = 0;
+	private int controllerOverride = 0;
     private string controllerText = "1";
 
     public int settingsDifficulty = 0;
+	private int difficultyOverride = 0;
     private string settingsText = "1";
 
     public bool sendEmail = true;
@@ -84,17 +86,42 @@ public class GameSettingsScript : MonoBehaviour
 
     void Update()
     {
-        int.TryParse(settingsText, out settingsDifficulty);
-        int.TryParse(controllerText, out controllerChoice);
+        int.TryParse(settingsText, out difficultyOverride);
+        int.TryParse(controllerText, out controllerOverride);
         int.TryParse(bananaText, out bannanasGoal);
         int.TryParse(feathersText, out feathersGoal);
         int.TryParse(timeText, out timeGoal);
+		
+		if(difficultyOverride == 1)
+		{
+			settingsDifficulty = 0;
+		}
+		else if(difficultyOverride == 2)
+		{
+			settingsDifficulty = 1;
+		}
+		else if(difficultyOverride == 3)
+		{
+			settingsDifficulty = 2;
+		}
+
+
+        if (controllerOverride == 1)
+        {
+            controllerChoice = 0;
+        }
+        else if (controllerOverride == 2)
+        {
+            controllerChoice = 1;
+        }
 
         //settingsDifficulty = int.Parse("" + settingsText) - 1;
         //controllerChoice = int.Parse("" + controllerText) - 1;
         
         settingsDifficulty = Mathf.Clamp(settingsDifficulty, 0, 2);
-        controllerChoice = Mathf.Clamp(controllerChoice, 0, 1);
+		difficultyOverride = Mathf.Clamp(difficultyOverride, 1, 3);
+        controllerOverride = Mathf.Clamp(controllerOverride, 1, 2);
+		controllerChoice = Mathf.Clamp(controllerChoice, 0, 1);
         timeGoal = Mathf.Clamp(timeGoal, 0, 300);
         feathersGoal = Mathf.Clamp(feathersGoal, 0, 50);
         bannanasGoal = Mathf.Clamp(bannanasGoal, 0, 50);
