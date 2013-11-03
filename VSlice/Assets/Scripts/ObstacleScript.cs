@@ -27,6 +27,8 @@ public class ObstacleScript : MonoBehaviour
     public InitScript statHandler;
 
     private bool hit = false;
+
+    public AudioClip squawk;
 	
 	
 
@@ -41,6 +43,8 @@ public class ObstacleScript : MonoBehaviour
 	void Start () {
 		log = GameObject.Find("LogSys(Clone)").GetComponent<LogSystem>();
         funnie = GameObject.Find ("ParrotContainer").GetComponent<FunnieMovementScript>();
+        
+        
 	}
 	
 	// Update is called once per frame
@@ -54,7 +58,8 @@ public class ObstacleScript : MonoBehaviour
 		{
             if (!funnie.hasFeather())
             {
-
+                AudioSource.PlayClipAtPoint(squawk, transform.position);
+                
                 funnie.setFunnieSpeed();
                 statHandler.playerStats.obstaclesHit += 1;
                 hit = true;

@@ -17,6 +17,8 @@ public class InitScript : MonoBehaviour {
     public Texture2D waitScreen;
     public Texture2D goodScreen;
 
+
+
     public int displayNumber = 0;
     public Texture2D[] BetweenScreens;
     public Texture2D[] EndScreens;
@@ -37,6 +39,8 @@ public class InitScript : MonoBehaviour {
         funnieArmController = GameObject.Find("ParrotContainer").GetComponent<FunnieMovementScript>();
         funnieBodyController = GameObject.Find("ParrotContainer").GetComponent<FunnieAltMovementScript>();
         settings = GameObject.Find("GameSettings").GetComponent<GameSettingsScript>();
+
+
         if (settings.controllerChoice == 1)
         {
             funnieBodyController.enabled = true;
@@ -119,7 +123,7 @@ public class InitScript : MonoBehaviour {
                         if (playerStats.roundBananaRatio() > 20) displayNumber = 2;
                         if (playerStats.roundBananaRatio() > 30) displayNumber = 3;
                         if (playerStats.roundBananaRatio() > 40) displayNumber = 4;
-                        
+
                         fullScreen.guiTexture.texture = EndScreens[displayNumber];
                         // goed gedaan screen
                     }

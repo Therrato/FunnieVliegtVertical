@@ -29,6 +29,9 @@ public class MenuHandler : MonoBehaviour
     public Texture2D creditScreen;
     public Texture2D helpScreen;
 
+    public AudioClip swoosh;
+    private GameObject SFX;
+
     public int menuDepth;
 
 
@@ -39,6 +42,7 @@ public class MenuHandler : MonoBehaviour
         gameSettings = GameObject.Find("GameSettings").GetComponent<GameSettingsScript>();
         backgroundHolder = GameObject.Find("Background").GetComponent<GUITexture>();
         cursor = GameObject.Find("HandPointer").GetComponent<MenuMovement>();
+        SFX = GameObject.Find("SFXHandler");
 	}
 	
 	// Update is called once per frame
@@ -49,24 +53,28 @@ public class MenuHandler : MonoBehaviour
         if (startCounter > 100)
         {
             menuDepth = 1;
+            swooshPlay();
             startCounter = 0;
         }
 
         if (goalCounter > 100)
         {
             menuDepth = 2;
+            swooshPlay();
             goalCounter = 0;
         }
 
         if (creditsCounter > 100)
         {
             menuDepth = 3;
+            swooshPlay();
             creditsCounter = 0;
         }
 
         if (helpCounter > 100)
         {
             menuDepth = 4;
+            swooshPlay();
             helpCounter = 0;
         }
 
@@ -82,6 +90,7 @@ public class MenuHandler : MonoBehaviour
 
         if (backCounter > 100)
         {
+            swooshPlay();
             if (menuDepth == 3 || menuDepth == 4)
             {
                 menuDepth = 0;
@@ -96,16 +105,23 @@ public class MenuHandler : MonoBehaviour
 
         if (saveSettings > 100)
         {
+            swooshPlay();
             startGame();
         }
 
         if (minutesModeCounter > 100)
         {
+            swooshPlay();
             start5MinuteMode();
         }
 
 
 	}
+
+    void swooshPlay()
+    {
+        SFX.audio.PlayOneShot(swoosh);
+    }
 
     void cursorCheck()
     {

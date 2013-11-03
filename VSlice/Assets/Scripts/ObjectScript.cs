@@ -42,6 +42,7 @@ public class ObjectScript : MonoBehaviour {
                 other.transform.parent.GetComponent<FunnieMovementScript>().CollectsFeather();
                 statHandler.playerStats.feathersCollected += 1;
                 log.pushEvent("FEATHERPICKUP");
+                AudioSource.PlayClipAtPoint(bananaSound, transform.position);
                
               
             }
