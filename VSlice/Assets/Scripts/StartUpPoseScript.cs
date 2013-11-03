@@ -67,6 +67,7 @@ public class StartUpPoseScript : MonoBehaviour {
             {
                 countDownGO.guiTexture.texture = null;
                 GameObject.Find("World").GetComponent<SpawnWorldScript>().deActivatePose();
+                
                 Destroy(this.gameObject);
             }
 
@@ -78,6 +79,11 @@ public class StartUpPoseScript : MonoBehaviour {
             positionTimerStarted = true;
             startTime = DateTime.Now;
         }
+    }
+
+    void OnDestroy()
+    {
+        GameObject.Find("parrot_anim01").GetComponent<BirdAnimationCaller>().flap();
     }
 
     private bool checkPosition()

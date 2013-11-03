@@ -10,10 +10,10 @@ public class FunnieMovementScript : MonoBehaviour {
 	public GameObject handLeft;
 	public GameObject handRight;
 	public GameObject shoulderCenter;
-    private float funniespeed = 35;
-    private float funnieMaxSpeed = 40;
+    private float funniespeed = 25;
+    private float funnieMaxSpeed = 45;
     private bool _hasFeather = false;
-    private float featherExtraSpeed = 15;
+    private float featherExtraSpeed = 20;
     private float featherDuration = 2;
     private DateTime featherPickupTime;
 
@@ -97,14 +97,14 @@ public class FunnieMovementScript : MonoBehaviour {
 
     public void setFunnieSpeed()
     {
-        funniespeed = 35;
+        funniespeed = 25;
     }
 
     public void increaseSpeed()
     {
         if (funnieMaxSpeed > funniespeed)
         {
-            funniespeed += 0.5f * Time.deltaTime;
+            funniespeed += 1.0f * Time.deltaTime;
         }
     }
 

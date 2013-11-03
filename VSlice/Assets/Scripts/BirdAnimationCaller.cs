@@ -8,14 +8,14 @@ public class BirdAnimationCaller : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        
+        calculateNextFlap();
     }
 
  
 
     void calculateNextFlap()
     {
-        durationForNextFlap = Random.Range(1000, 1300);
+        durationForNextFlap = Random.Range(600, 800);
     }
 
     // Update is called once per frame
@@ -32,14 +32,14 @@ public class BirdAnimationCaller : MonoBehaviour
 
     }
 
-    public void bump()
+    public void Hit()
     {
-        this.gameObject.animation.Play("Bump");
+        this.gameObject.animation.Play("Hit");
     }
 
     public void flap()
     {
-        Debug.Log("flap");
-       // this.gameObject.animation.Play("Flap");
+        //Debug.Log("flap");
+        this.gameObject.animation.Play("Flap");
     }
 }

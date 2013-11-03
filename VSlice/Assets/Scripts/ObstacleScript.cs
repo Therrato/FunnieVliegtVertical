@@ -58,6 +58,7 @@ public class ObstacleScript : MonoBehaviour
                 funnie.setFunnieSpeed();
                 statHandler.playerStats.obstaclesHit += 1;
                 hit = true;
+                GameObject.Find("parrot_anim01").GetComponent<BirdAnimationCaller>().Hit();
                 Destroy(this.gameObject);
             }
             else
