@@ -66,9 +66,24 @@ namespace Assets.Scripts
 
         }
 
-        
 
 
+
+
+        public int getPercentageReachedBananas(PlayerStats p)
+        {
+            return p.bananas * (this.bananas / 100);
+
+        }
+        /// <summary>
+        ///  in case of 5 min mode
+        /// </summary>
+        /// <param name="p"></param>
+        /// <returns></returns>
+        public int getBarInt(PlayerStats p)
+        {
+            return p.bananas;
+        }
     }
     
 

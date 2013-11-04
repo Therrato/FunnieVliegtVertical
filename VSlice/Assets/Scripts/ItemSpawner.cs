@@ -17,7 +17,7 @@ public class ItemSpawner : MonoBehaviour {
     public int height = 3;
     public int dificulty = 0;
 
-    private int[] dificulties = { 18,10,6};
+    private int[] dificulties = { 18,10,2};
 
 
     public bool[, ,] spaceUsed = new bool[3, 3, 10];

@@ -5,7 +5,7 @@ using System;
 
 public class InitScript : MonoBehaviour {
 
-    private Goal NormalGoal;
+    public Goal NormalGoal;
     public PlayerStats playerStats;
     public int runtime;
     public SpawnWorldScript worldSpawner;
@@ -60,6 +60,7 @@ public class InitScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        NormalGoal.getPercentageReachedBananas(playerStats);
         if (!worldSpawner.goalReached)worldSpawner.setGoalReached(NormalGoal.isGoalReached(playerStats));
         if (worldSpawner.endTileReached)
         {
@@ -77,7 +78,7 @@ public class InitScript : MonoBehaviour {
                     if (playerStats.roundBananaRatio() > 20) displayNumber = 2;
                     if (playerStats.roundBananaRatio() > 30) displayNumber = 3;
                     if (playerStats.roundBananaRatio() > 40) displayNumber = 4;
-
+                    Destroy(GameObject.Find("HUD"));
                     NormalGoal.rounds++;
                     fullScreen.guiTexture.texture = BetweenScreens[displayNumber]; 
                     // display wait round screen
@@ -123,7 +124,7 @@ public class InitScript : MonoBehaviour {
                         if (playerStats.roundBananaRatio() > 20) displayNumber = 2;
                         if (playerStats.roundBananaRatio() > 30) displayNumber = 3;
                         if (playerStats.roundBananaRatio() > 40) displayNumber = 4;
-
+                        Destroy(GameObject.Find("HUD"));
                         fullScreen.guiTexture.texture = EndScreens[displayNumber];
                         // goed gedaan screen
                     }
