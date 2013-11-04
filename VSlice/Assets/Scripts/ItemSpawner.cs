@@ -214,7 +214,7 @@ public class ItemSpawner : MonoBehaviour {
             {
                 float heightSpawn;
                 GameObject newPicKup;
-                if (Random.Range(0, 5) ==1)
+                if (Random.Range(0, 10) ==1)
                 {
                    newPicKup = Instantiate(pickupFruits[1]) as GameObject;
                    heightSpawn = 16;
