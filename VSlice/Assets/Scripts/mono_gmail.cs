@@ -71,12 +71,12 @@ namespace Assets.Scripts
                 emailbody = "Tijdens een recente vlucht zijn deze volgende scores behaald. \r\n"+
                             "Tevens hebben we de volgende gegevens uit kunnen lezen. \r\n"+
                             "De vlucht begon om "+ startTime+" \r\n"+
-                            "Er zijn voor "+ ratios.Length/2 + "gevlogen.\r\n"+
+                            "Er zijn in het totaal "+ ratios.Length/2 + "ronden gevlogen.\r\n"+
                             "Er zijn "+ allbananas+ " bananen opgepakt in het spel.\r\n"+
                             "Er zijn "+ allfeathers+" veren opgepakt in het spel. \r\n"+
                             "De speler had de meeste moeite met object: "+mosthit+ ". \r\n"+
-                            "in de bijlage vind u een grafiek zien waarop staat aangegeven in het groen hoeveel procent van de banananen er zijn opgepakt\r\n"+
-                            "en in het rood word aangegeven hoeveel procent van de objecten er zijn geraakt";
+                            "in de bijlage vind u een grafiek. \r\n Op deze grafiek kan u zien hoeveel procent van de banananen er zijn opgepakt(geel) \r\n"+
+                            "en in het rood word aangegeven hoeveel procent van de objecten er zijn ontweken";
 
                 sendEmail();
                 Resources.UnloadAsset(tex);
